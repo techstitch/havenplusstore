@@ -505,7 +505,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3><strong>A Family Tradition of Bold, Fresh Flavor</strong></h3>",
+                "text": "<h3>A Family Tradition of Bold, Fresh Flavor</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
