@@ -517,10 +517,10 @@
           "type": "video",
           "name": "t:names.video",
           "settings": {
-            "source": "uploaded",
+            "source": "url",
             "video": "shopify://files/videos/mXzvTNhJmGdwxg4o9zB_321507450384_mp4_264_hd.mp4",
-            "video_url": "",
-            "video_autoplay": false,
+            "video_url": "https://www.youtube.com/watch?v=EJ7liaxmTa0&ab_channel=HavenPlus",
+            "video_autoplay": true,
             "video_loop": true,
             "alt": "",
             "custom_width": 67,
