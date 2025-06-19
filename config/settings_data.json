@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/logo_black.png",
+    "logo": "shopify://shop_images/logo.png",
     "logo_inverse": "shopify://shop_images/logo.png",
     "favicon": "shopify://shop_images/favicon.png",
     "type_body_font": "jost_n4",
@@ -26,7 +26,7 @@
     "type_case_h4": "uppercase",
     "type_case_h5": "uppercase",
     "type_case_h6": "uppercase",
-    "card_hover_effect": "subtle-zoom",
+    "card_hover_effect": "lift",
     "button_border_radius_primary": 100,
     "type_font_button_primary": "accent",
     "button_font_weight_primary": "600",
