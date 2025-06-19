@@ -14,17 +14,6 @@
     "custom_section_76dqAh": {
       "type": "section",
       "blocks": {
-        "follow_on_shop_BaYmGM": {
-          "type": "follow-on-shop",
-          "name": "t:names.follow_on_shop",
-          "settings": {
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_EUUkMF": {
           "type": "group",
           "name": "Footer columns",
@@ -314,12 +303,25 @@
             }
           },
           "block_order": []
+        },
+        "payment_icons_FGzX7L": {
+          "type": "payment-icons",
+          "name": "t:names.payment_icons",
+          "settings": {
+            "horizontal_alignment": "flex-start",
+            "gap": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "follow_on_shop_BaYmGM",
         "group_EUUkMF",
-        "footer_utilities_B7cUpb"
+        "footer_utilities_B7cUpb",
+        "payment_icons_FGzX7L"
       ],
       "name": "Footer",
       "settings": {
