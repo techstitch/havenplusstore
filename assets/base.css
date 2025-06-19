@@ -104,7 +104,6 @@ select {
 }
 
 @media (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
-
   .card-hover-effect-lift .product-card:hover,
   .card-hover-effect-lift .collection-card:hover,
   .card-hover-effect-lift .resource-card:hover,
@@ -208,12 +207,12 @@ p:empty {
 }
 
 :is(p, h1, h2, h3, h4, h5, h6):first-child,
-:empty:first-child+ :where(p, h1, h2, h3, h4, h5, h6) {
+:empty:first-child + :where(p, h1, h2, h3, h4, h5, h6) {
   margin-block-start: 0;
 }
 
 :is(p, h1, h2, h3, h4, h5, h6):last-child,
-:where(p, h1, h2, h3, h4, h5, h6)+ :has(+ :empty:last-child) {
+:where(p, h1, h2, h3, h4, h5, h6) + :has(+ :empty:last-child) {
   margin-block-end: 0;
 }
 
@@ -318,8 +317,7 @@ p:empty {
   --page-margin: 16px;
 }
 
-@media screen and (width >=750px) {
-
+@media screen and (width >= 750px) {
   .page-width-wide,
   .page-width-normal,
   .page-width-narrow,
@@ -356,14 +354,19 @@ p:empty {
    full-width background image even if the section content is constrained by the page width. Do not try
    to rewrite this to max-width: --page-width; margin: 0 auto;, it doesn't work. */
 .section {
-  --full-page-grid-central-column-width: min(var(--page-width) - var(--page-margin) * 2,
-      calc(100% - var(--page-margin) * 2));
+  --full-page-grid-central-column-width: min(
+    var(--page-width) - var(--page-margin) * 2,
+    calc(100% - var(--page-margin) * 2)
+  );
   --full-page-grid-margin: minmax(var(--page-margin), 1fr);
-  --full-page-grid-with-margins: var(--full-page-grid-margin) var(--full-page-grid-central-column-width) var(--full-page-grid-margin);
+  --full-page-grid-with-margins: var(--full-page-grid-margin) var(--full-page-grid-central-column-width)
+    var(--full-page-grid-margin);
 
   /* Utility variable gives the grid's first column width. Provides an offset width for components like carousels */
-  --util-page-margin-offset: max(var(--page-margin),
-      calc((100% - min(var(--page-content-width), calc(100% - (var(--page-margin) * 2)))) / 2));
+  --util-page-margin-offset: max(
+    var(--page-margin),
+    calc((100% - min(var(--page-content-width), calc(100% - (var(--page-margin) * 2)))) / 2)
+  );
 
   /* Offset for full-width sections to account for the page margin,
   used for Marquee — note that --util-page-margin-offset doesn't work here */
@@ -381,7 +384,7 @@ p:empty {
 }
 
 /* Place all direct children in the center column by default */
-.section>* {
+.section > * {
   grid-column: 2;
 }
 
@@ -402,32 +405,32 @@ p:empty {
 }
 
 /* For page-width sections, all content goes in the center column */
-.section--page-width>* {
+.section--page-width > * {
   grid-column: 2;
 }
 
 /* For full-width sections, content spans all columns */
-.section--full-width>* {
+.section--full-width > * {
   grid-column: 1 / -1;
 }
 
 /* Some page-width sections should still extend all the way to the right edge of the page, e.g. collection carousel */
-.section--page-width.section--full-width-right>* {
+.section--page-width.section--full-width-right > * {
   grid-column: 2 / 4;
 }
 
 /* For full-width sections with margin, content still spans full width but with space on the sides */
-.section--full-width.section--full-width-margin>* {
+.section--full-width.section--full-width-margin > * {
   grid-column: 1 / -1;
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     padding-left: var(--page-margin);
     padding-right: var(--page-margin);
   }
 }
 
 /* Some section content break out to full width of the page */
-.section>.force-full-width {
+.section > .force-full-width {
   grid-column: 1 / -1;
 }
 
@@ -462,7 +465,6 @@ p:empty {
 }
 
 @media screen and (width < 750px) {
-
   .hidden--mobile,
   .mobile\:hidden {
     /* stylelint-disable-next-line declaration-no-important */
@@ -470,8 +472,7 @@ p:empty {
   }
 }
 
-@media screen and (width >=750px) {
-
+@media screen and (width >= 750px) {
   .hidden--desktop,
   .desktop\:hidden {
     /* stylelint-disable-next-line declaration-no-important */
@@ -529,7 +530,7 @@ p:empty {
   flex-direction: column;
 }
 
-@media screen and (width >=750px) {
+@media screen and (width >= 750px) {
   .grid {
     display: grid;
     gap: 0;
@@ -538,11 +539,14 @@ p:empty {
   }
 }
 
-@media screen and (width >=1400px) {
+@media screen and (width >= 1400px) {
   .grid {
     grid-template-columns:
-      1fr repeat(var(--centered-column-number),
-        minmax(0, calc((var(--page-width) - var(--page-margin) * 2) / var(--centered-column-number)))) 1fr;
+      1fr repeat(
+        var(--centered-column-number),
+        minmax(0, calc((var(--page-width) - var(--page-margin) * 2) / var(--centered-column-number)))
+      )
+      1fr;
   }
 }
 
@@ -664,7 +668,7 @@ p:empty {
   height: var(--icon-size-xs);
 }
 
-.svg-wrapper>svg {
+.svg-wrapper > svg {
   width: var(--icon-size-sm);
   height: var(--icon-size-sm);
 }
@@ -700,7 +704,7 @@ placeholder-image[data-type='product'] {
   width: 100%;
 }
 
-placeholder-image[data-type='product']>img {
+placeholder-image[data-type='product'] > img {
   mix-blend-mode: luminosity;
 }
 
@@ -710,7 +714,7 @@ placeholder-image[data-type='product']:not(:has(> img)) {
   height: 350px;
 }
 
-placeholder-image>img {
+placeholder-image > img {
   object-fit: cover;
   aspect-ratio: var(--ratio);
   height: 100%;
@@ -719,7 +723,7 @@ placeholder-image>img {
 /* Base text and heading styles */
 body,
 .paragraph:not(.button),
-.paragraph>* {
+.paragraph > * {
   font-family: var(--font-paragraph--family);
   font-style: var(--font-paragraph--style);
   font-weight: var(--font-paragraph--weight);
@@ -730,7 +734,7 @@ body,
   color: var(--color, var(--color-foreground));
 }
 
-.paragraph>small {
+.paragraph > small {
   font-size: smaller;
 }
 
@@ -738,7 +742,7 @@ body,
 
 h1,
 .h1.h1,
-.text-block.h1>* {
+.text-block.h1 > * {
   font-family: var(--font-h1--family);
   font-style: var(--font-h1--style);
   font-weight: var(--font-h1--weight);
@@ -751,7 +755,7 @@ h1,
 
 h2,
 .h2.h2,
-.text-block.h2>* {
+.text-block.h2 > * {
   font-family: var(--font-h2--family);
   font-style: var(--font-h2--style);
   font-weight: var(--font-h2--weight);
@@ -765,7 +769,7 @@ h2,
 h3,
 .h3,
 .h3.h3,
-.text-block.h3>* {
+.text-block.h3 > * {
   font-family: var(--font-h3--family);
   font-style: var(--font-h3--style);
   font-weight: var(--font-h3--weight);
@@ -778,7 +782,7 @@ h3,
 
 h4,
 .h4.h4,
-.text-block.h4>* {
+.text-block.h4 > * {
   font-family: var(--font-h4--family);
   font-style: var(--font-h4--style);
   font-weight: var(--font-h4--weight);
@@ -791,7 +795,7 @@ h4,
 
 h5,
 .h5.h5,
-.text-block.h5>* {
+.text-block.h5 > * {
   font-family: var(--font-h5--family);
   font-style: var(--font-h5--style);
   font-weight: var(--font-h5--weight);
@@ -804,7 +808,7 @@ h5,
 
 h6,
 .h6.h6,
-.text-block.h6>* {
+.text-block.h6 > * {
   font-family: var(--font-h6--family);
   font-style: var(--font-h6--style);
   font-weight: var(--font-h6--weight);
@@ -835,13 +839,15 @@ a {
     color var(--animation-speed) var(--animation-easing);
 }
 
-:is(h1, h2, h3, h4, h5, h6, p)>a:hover {
+:is(h1, h2, h3, h4, h5, h6, p) > a:hover {
   --button-color: var(--color, var(--color-primary-hover));
 }
 
 /* Add underline to text using our paragraph styles only. */
 p:not(.h1, .h2, .h3, .h4, .h5, .h6) a:where(:not(.button, .button-primary, .button-secondary)),
-.rte :is(p, ul, ol, table):not(.h1, .h2, .h3, .h4, .h5, .h6) a:where(:not(.button, .button-primary, .button-secondary)) {
+.rte
+  :is(p, ul, ol, table):not(.h1, .h2, .h3, .h4, .h5, .h6)
+  a:where(:not(.button, .button-primary, .button-secondary)) {
   text-decoration-color: currentcolor;
 
   &:hover {
@@ -864,7 +870,7 @@ details:not([open]) .summary-open {
   display: none;
 }
 
-details[open]>summary .icon-animated>svg {
+details[open] > summary .icon-animated > svg {
   transform: rotate(180deg);
 }
 
@@ -884,7 +890,7 @@ summary::-webkit-details-marker {
   width: 100%;
   padding-block: var(--padding-block-start) var(--padding-block-end);
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     display: grid;
   }
 }
@@ -898,7 +904,7 @@ summary::-webkit-details-marker {
   list-style: none;
 }
 
-@media screen and (width >=750px) {
+@media screen and (width >= 750px) {
   .product-grid {
     grid-template-columns: var(--product-grid-columns-desktop);
   }
@@ -909,7 +915,8 @@ summary::-webkit-details-marker {
 }
 
 .product-grid__item {
-  border: var(--product-card-border-width) solid rgba(from var(--color-border) r g b / var(--product-card-border-opacity));
+  border: var(--product-card-border-width) solid
+    rgba(from var(--color-border) r g b / var(--product-card-border-opacity));
 }
 
 .product-grid--organic[product-grid-view='default'] .product-grid__item {
@@ -951,13 +958,13 @@ summary::-webkit-details-marker {
   }
 }
 
-.product-grid__card .group-block>* {
-  @media screen and (width <=749px) {
+.product-grid__card .group-block > * {
+  @media screen and (width <= 749px) {
     flex-direction: column;
   }
 }
 
-ul[product-grid-view='zoom-out'] .product-grid__card>* {
+ul[product-grid-view='zoom-out'] .product-grid__card > * {
   display: none;
 }
 
@@ -965,7 +972,9 @@ ul[product-grid-view='zoom-out'] .product-grid__card .card-gallery {
   display: block;
 }
 
-[product-grid-view='zoom-out'] .card-gallery> :is(quick-add-component, .product-badges, slideshow-component > slideshow-controls) {
+[product-grid-view='zoom-out']
+  .card-gallery
+  > :is(quick-add-component, .product-badges, slideshow-component > slideshow-controls) {
   display: none;
 }
 
@@ -973,13 +982,15 @@ ul[product-grid-view='zoom-out'] .product-grid__card .card-gallery {
   pointer-events: none;
 }
 
-ul[product-grid-view='zoom-out'] .card-gallery>img {
+ul[product-grid-view='zoom-out'] .card-gallery > img {
   display: block;
 }
 
 [product-grid-view='zoom-out'] {
-  --product-grid-columns-desktop: repeat(10,
-      minmax(clamp(50px, calc(100% - 9 * var(--product-grid-gap)) / 10, 80px), 1fr));
+  --product-grid-columns-desktop: repeat(
+    10,
+    minmax(clamp(50px, calc(100% - 9 * var(--product-grid-gap)) / 10, 80px), 1fr)
+  );
 }
 
 .product-grid-view-zoom-out--details {
@@ -1002,15 +1013,15 @@ ul[product-grid-view='zoom-out'] .card-gallery>img {
   font-weight: 400;
 }
 
-.product-grid-view-zoom-out--details>span.h6,
-.product-grid-view-zoom-out--details>div.h6>product-price {
+.product-grid-view-zoom-out--details > span.h6,
+.product-grid-view-zoom-out--details > div.h6 > product-price {
   display: inline-block;
   line-height: 0;
   margin-top: var(--margin-2xs);
 }
 
-.product-grid-view-zoom-out--details>span.h6>*,
-.product-grid-view-zoom-out--details>div.h6>*>* {
+.product-grid-view-zoom-out--details > span.h6 > *,
+.product-grid-view-zoom-out--details > div.h6 > * > * {
   line-height: 1.2;
 }
 
@@ -1108,18 +1119,18 @@ results-list[initialized] {
   width: 100%;
 }
 
-.text-block>*:first-child,
-.text-block>*:empty:first-child+* {
+.text-block > *:first-child,
+.text-block > *:empty:first-child + * {
   margin-block-start: 0;
 }
 
-.text-block>*:last-child,
-.text-block>*:has(+ *:empty:last-child) {
+.text-block > *:last-child,
+.text-block > *:has(+ *:empty:last-child) {
   margin-block-end: 0;
 }
 
 /* This is to deal with the margin applied to the p when custom styles are enabled. The p isn't the first child anymore due to the style tag */
-.text-block>style+* {
+.text-block > style + * {
   margin-block-start: 0;
 }
 
@@ -1128,7 +1139,7 @@ results-list[initialized] {
   border: none;
   box-shadow: var(--shadow-popover);
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     border-radius: var(--style-border-radius-popover);
     max-width: var(--normal-content-width);
   }
@@ -1175,7 +1186,6 @@ results-list[initialized] {
   --dialog-drawer-opening-animation: slideInRight;
   --dialog-drawer-closing-animation: slideOutRight;
 }
-
 /* stylelint-enable value-keyword-case */
 
 .dialog-drawer[open] {
@@ -1338,7 +1348,7 @@ button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
 }
 
 .show-more__button:hover {
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     color: var(--color-primary-hover);
   }
 }
@@ -1370,7 +1380,8 @@ shopify-accelerated-checkout-cart {
   --shopify-accelerated-checkout-button-block-size: var(--height-buy-buttons);
 }
 
-.product-form-buttons:has(.add-to-cart-button.button-secondary) :is(shopify-accelerated-checkout, shopify-accelerated-checkout-cart) {
+.product-form-buttons:has(.add-to-cart-button.button-secondary)
+  :is(shopify-accelerated-checkout, shopify-accelerated-checkout-cart) {
   --shopify-accelerated-checkout-button-border-radius: var(--style-border-radius-buttons-secondary);
   --shopify-accelerated-checkout-button-block-size: var(--height-buy-buttons);
 }
@@ -1417,14 +1428,14 @@ summary .icon-plus :is(.horizontal, .vertical),
   opacity: 1;
 }
 
-details[open]>summary .icon-plus .horizontal,
-.details-open>summary .icon-plus .horizontal,
+details[open] > summary .icon-plus .horizontal,
+.details-open > summary .icon-plus .horizontal,
 .show-more:where([data-expanded='true']) .show-more__button .icon-plus .horizontal {
   transform: rotate(90deg);
 }
 
-details[open]>summary .icon-plus .vertical,
-.details-open>summary .icon-plus .vertical,
+details[open] > summary .icon-plus .vertical,
+.details-open > summary .icon-plus .vertical,
 .show-more:where([data-expanded='true']) .show-more__button .icon-plus .vertical {
   transform: rotate(90deg);
   opacity: 0;
@@ -1433,14 +1444,15 @@ details[open]>summary .icon-plus .vertical,
 /* Product Media */
 media-gallery {
   display: block;
-  width: 100%;
-  padding-top: 100px;
+  width: 100%;  padding-top: 100px;
+
 }
 
 :where(media-gallery, .product-grid__item) {
   .media-gallery__grid {
     grid-template-columns: 1fr;
     gap: var(--image-gap);
+    padding-top:100px;
   }
 }
 
@@ -1450,7 +1462,7 @@ media-gallery {
   }
 }
 
-:not(.dialog-zoomed-gallery)>.product-media-container {
+:not(.dialog-zoomed-gallery) > .product-media-container {
   display: flex;
   aspect-ratio: var(--gallery-aspect-ratio, var(--media-preview-ratio));
   max-height: var(--constrained-height);
@@ -1482,7 +1494,7 @@ media-gallery:where(.media-gallery--grid) .media-gallery__grid {
   position: absolute;
 }
 
-@media screen and (width >=750px) {
+@media screen and (width >= 750px) {
   .product-media-container.constrain-height {
     --viewport-offset: var(--header-height, 100px);
     --constrained-min-height: 500px;
@@ -1614,7 +1626,7 @@ zoom-dialog dialog {
   animation: thumbnailsSlideOutBottom var(--animation-speed) var(--animation-easing) forwards;
 }
 
-@media screen and (width >=750px) {
+@media screen and (width >= 750px) {
   .dialog-thumbnails-list {
     position: fixed;
     flex-direction: column;
@@ -1669,7 +1681,7 @@ zoom-dialog dialog {
 }
 
 /* If the product media is already providing an image cover, hide images provided by sibling deferred-media */
-.product-media__image~* .deferred-media__poster-image {
+.product-media__image ~ * .deferred-media__poster-image {
   display: none;
 }
 
@@ -1690,7 +1702,7 @@ zoom-dialog dialog {
 product-model model-viewer,
 /* Media that have a poster button sibling providing the size should be absolute-positioned.
 Otherwise, it should be a block to rely on its own size */
-:is(deferred-media, product-model)>.deferred-media__poster-button~*:not(template) {
+:is(deferred-media, product-model) > .deferred-media__poster-button ~ *:not(template) {
   display: block;
   position: absolute;
   top: 0;
@@ -1715,14 +1727,16 @@ slideshow-slide .shopify-model-viewer-ui__controls-area.shopify-model-viewer-ui_
 }
 
 @media screen and (width < 750px) {
-  slideshow-component:has(:not(.mobile\:hidden) :is(.slideshow-controls__dots, .slideshow-controls__counter)) .shopify-model-viewer-ui__controls-area {
+  slideshow-component:has(:not(.mobile\:hidden) :is(.slideshow-controls__dots, .slideshow-controls__counter))
+    .shopify-model-viewer-ui__controls-area {
     /* Position the controls just above the counter */
     bottom: calc(var(--minimum-touch-target) + var(--padding-sm));
   }
 }
 
-@media screen and (width >=750px) {
-  slideshow-component:has(:not(.desktop\:hidden) :is(.slideshow-controls__dots, .slideshow-controls__counter)) .shopify-model-viewer-ui__controls-area {
+@media screen and (width >= 750px) {
+  slideshow-component:has(:not(.desktop\:hidden) :is(.slideshow-controls__dots, .slideshow-controls__counter))
+    .shopify-model-viewer-ui__controls-area {
     /* Position the controls just above the counter */
     bottom: calc(var(--minimum-touch-target) + var(--padding-sm));
   }
@@ -1742,7 +1756,6 @@ slideshow-slide .shopify-model-viewer-ui__controls-area.shopify-model-viewer-ui_
 }
 
 deferred-media {
-
   /* The overflow hidden in the deferred-media won't let the button show the focus ring */
   &:has(:focus-visible) {
     outline: var(--focus-outline-width) solid currentcolor;
@@ -1808,7 +1821,7 @@ deferred-media[data-media-loaded] img {
     color: rgba(from var(--color-white) r g b / 80%);
   }
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     width: 4rem;
     height: 4rem;
   }
@@ -1829,7 +1842,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   padding: var(--padding-md);
 }
 
-.button-shopify-xr>svg {
+.button-shopify-xr > svg {
   width: var(--icon-size-sm);
   height: var(--icon-size-sm);
   fill: currentcolor;
@@ -1843,10 +1856,8 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 /* Swatches */
 .swatch {
   --color-border: rgb(from var(--color-foreground) r g b / var(--style-border-swatch-opacity));
-  --min-width-unitless: 15.9999;
-  /* want to avoid division by 0 */
-  --min-height-unitless: 15.9999;
-  /* want to avoid division by 0 */
+  --min-width-unitless: 15.9999; /* want to avoid division by 0 */
+  --min-height-unitless: 15.9999; /* want to avoid division by 0 */
   --min-height: 16px;
   --min-width: 16px;
 
@@ -1875,19 +1886,27 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
     We also want the result to always be smaller than the input (pdp > everywhere else)
     by some scaling factor.
   */
-  --offset-scaled-width: calc(var(--scaling-factor) * var(--offset-swatch-width) / var(--offset-swatch-height) * var(--offset-max-swatch-size));
-  --offset-scaled-height: calc(var(--scaling-factor) * var(--offset-swatch-height) / var(--offset-swatch-width) * var(--offset-max-swatch-size));
+  --offset-scaled-width: calc(
+    var(--scaling-factor) * var(--offset-swatch-width) / var(--offset-swatch-height) * var(--offset-max-swatch-size)
+  );
+  --offset-scaled-height: calc(
+    var(--scaling-factor) * var(--offset-swatch-height) / var(--offset-swatch-width) * var(--offset-max-swatch-size)
+  );
   --offset-max-swatch-size: calc(var(--max-swatch-size) - var(--min-width));
 
   /* width = min(m + sU, (m + s * W'/H' * M'), M) */
-  --swatch-width: min(calc(var(--min-width) + calc(var(--scaling-factor) * var(--offset-swatch-width) * 1px)),
-      calc(var(--min-width) + var(--offset-scaled-width)),
-      var(--max-swatch-size));
+  --swatch-width: min(
+    calc(var(--min-width) + calc(var(--scaling-factor) * var(--offset-swatch-width) * 1px)),
+    calc(var(--min-width) + var(--offset-scaled-width)),
+    var(--max-swatch-size)
+  );
 
   /* height = min(m + sV, (m + s * H'/W' * M'), M) */
-  --swatch-height: min(calc(var(--min-height) + calc(var(--scaling-factor) * var(--offset-swatch-height) * 1px)),
-      calc(var(--min-height) + var(--offset-scaled-height)),
-      var(--max-swatch-size));
+  --swatch-height: min(
+    calc(var(--min-height) + calc(var(--scaling-factor) * var(--offset-swatch-height) * 1px)),
+    calc(var(--min-height) + var(--offset-scaled-height)),
+    var(--max-swatch-size)
+  );
 
   display: block;
   background: var(--swatch-background);
@@ -1934,7 +1953,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
     --color-border: rgb(from var(--color-foreground) r g b / var(--variant-picker-border-opacity));
   }
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     /* desktop values */
     --max-swatch-size: 32px;
     --max-pill-size: 16px;
@@ -1953,10 +1972,9 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   z-index: var(--layer-flat);
 }
 
-@media screen and (width >=750px) {
-
+@media screen and (width >= 750px) {
   .sticky-content--desktop,
-  .sticky-content--desktop.full-height--desktop>.group-block {
+  .sticky-content--desktop.full-height--desktop > .group-block {
     position: sticky;
     top: var(--sticky-header-offset, 0);
     z-index: var(--layer-flat);
@@ -1989,8 +2007,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   position: relative;
 }
 
-@media screen and (width >=750px) {
-
+@media screen and (width >= 750px) {
   product-card:focus-within .quick-add__button,
   .card-gallery:hover .quick-add__button {
     display: grid;
@@ -2071,7 +2088,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 .spacing-style {
   --spacing-scale: var(--spacing-scale-md);
 
-  @media screen and (width >=990px) {
+  @media screen and (width >= 990px) {
     --spacing-scale: var(--spacing-scale-default);
   }
 
@@ -2104,7 +2121,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   width: var(--size-style-width-mobile, var(--size-style-width));
   height: var(--size-style-height-mobile, var(--size-style-height));
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     width: var(--size-style-width);
     height: var(--size-style-height);
   }
@@ -2112,7 +2129,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
 /* Custom Typography style */
 .custom-typography,
-.custom-typography>* {
+.custom-typography > * {
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   text-transform: var(--text-transform);
@@ -2138,12 +2155,12 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 .custom-font-size,
-.custom-font-size>* {
+.custom-font-size > * {
   font-size: var(--font-size);
 }
 
 .custom-font-weight,
-.custom-font-weight>* {
+.custom-font-weight > * {
   font-weight: var(--weight);
 }
 
@@ -2160,7 +2177,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 .layout-panel-flex {
   --gap-scale: var(--spacing-scale-md);
 
-  @media screen and (width >=990px) {
+  @media screen and (width >= 990px) {
     --gap-scale: var(--spacing-scale-default);
   }
 }
@@ -2205,7 +2222,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   }
 }
 
-@media (width >=750px) {
+@media (width >= 750px) {
   .layout-panel-flex {
     flex-direction: var(--flex-direction);
   }
@@ -2270,7 +2287,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   }
 
   :is(p, h1, h2, h3, h4, h5, h6):first-child,
-  :empty:first-child+ :is(p, h1, h2, h3, h4, h5, h6) {
+  :empty:first-child + :is(p, h1, h2, h3, h4, h5, h6) {
     margin-block-start: 0;
   }
 
@@ -2342,7 +2359,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   display: flex;
   align-items: center;
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     --checkbox-size: 16px;
     --checkbox-border-radius: 5px;
     --checkbox-label-padding: 6px;
@@ -2369,17 +2386,17 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
     outline: none;
   }
 
-  &:focus-visible+.checkbox__label .icon-checkmark {
+  &:focus-visible + .checkbox__label .icon-checkmark {
     outline: var(--focus-outline-width) solid currentcolor;
     outline-offset: var(--focus-outline-offset);
   }
 
-  &:checked+.checkbox__label .icon-checkmark {
+  &:checked + .checkbox__label .icon-checkmark {
     background-color: var(--color-foreground);
     border-color: var(--color-foreground);
   }
 
-  &:disabled+.checkbox__label .icon-checkmark {
+  &:disabled + .checkbox__label .icon-checkmark {
     background-color: var(--input-disabled-background-color);
     border-color: var(--input-disabled-border-color);
   }
@@ -2415,7 +2432,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   transition: opacity var(--animation-speed) var(--animation-easing);
 }
 
-.checkbox__input:disabled+.checkbox__label {
+.checkbox__input:disabled + .checkbox__label {
   color: var(--input-disabled-text-color);
 }
 
@@ -2581,7 +2598,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   }
 }
 
-.pills__pill>.svg-wrapper {
+.pills__pill > .svg-wrapper {
   --close-icon-opacity: 0.4;
   --icon-stroke-width: 1px;
 
@@ -2599,7 +2616,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 .pills__pill--desktop-small {
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     font-size: var(--font-size--xs);
   }
 }
@@ -2881,7 +2898,6 @@ fly-to-cart {
 }
 
 @keyframes thumbnail-selected {
-
   0%,
   100% {
     box-shadow: 0 0 0 2px transparent;
@@ -2975,7 +2991,7 @@ fly-to-cart {
   clip-path: inset(-50px 0 0 0);
 }
 
-@media (width >=750px) {
+@media (width >= 750px) {
   .top-shadow--mobile::before {
     display: none;
   }
@@ -2990,7 +3006,7 @@ fly-to-cart {
   clip-path: inset(0 0 -50px 0);
 }
 
-@media (width >=750px) {
+@media (width >= 750px) {
   .bottom-shadow--mobile::before {
     display: none;
   }
@@ -3003,11 +3019,11 @@ fly-to-cart {
   aspect-ratio: var(--size-style-aspect-ratio, auto);
 }
 
-:not(deferred-media)>.video-placeholder-wrapper {
+:not(deferred-media) > .video-placeholder-wrapper {
   width: var(--video-placeholder-width);
 }
 
-.video-placeholder-wrapper>* {
+.video-placeholder-wrapper > * {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3078,7 +3094,7 @@ slideshow-slides {
     min-height: 25rem;
   }
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     &[size='small'] {
       min-height: 26.25rem;
     }
@@ -3128,10 +3144,12 @@ slideshow-slide {
 }
 
 @media screen and (width < 750px) {
-
   /* Media gallery has a peeking slide on the right side always, and on the left side when the current slide is the last one */
-  .media-gallery--hint :is(slideshow-slide:has(+ slideshow-slide[aria-hidden='false']:last-of-type),
-    slideshow-slide[aria-hidden='false'] + slideshow-slide) {
+  .media-gallery--hint
+    :is(
+      slideshow-slide:has(+ slideshow-slide[aria-hidden='false']:last-of-type),
+      slideshow-slide[aria-hidden='false'] + slideshow-slide
+    ) {
     content-visibility: auto;
 
     slideshow-component[actioned] & {
@@ -3145,8 +3163,11 @@ slideshow-slide {
  * Card galleries preview the next or previous images on 'pointerenter', so we
  * try to kick load them beforehand (they are lazy loaded otherwise).
  */
-:is(.resource-list__carousel, .card-gallery) :is(slideshow-slide:has(+ slideshow-slide[aria-hidden='false']),
-  slideshow-slide[aria-hidden='false'] + slideshow-slide) {
+:is(.resource-list__carousel, .card-gallery)
+  :is(
+    slideshow-slide:has(+ slideshow-slide[aria-hidden='false']),
+    slideshow-slide[aria-hidden='false'] + slideshow-slide
+  ) {
   content-visibility: auto;
 
   slideshow-component[actioned] & {
@@ -3158,7 +3179,7 @@ slideshow-slide {
  * Be specific about HTML children structure to avoid targeting nested slideshows.
  * Ensure that the content is 'visible' while scrolling instead of 'auto' to avoid issues in Safari.
  */
-slideshow-component:is([dragging], [transitioning], :hover)>slideshow-container>slideshow-slides>slideshow-slide {
+slideshow-component:is([dragging], [transitioning], :hover) > slideshow-container > slideshow-slides > slideshow-slide {
   content-visibility: visible;
 }
 
@@ -3295,7 +3316,8 @@ slideshow-controls:not([controls-on-media])[icons-on-media] {
   }
 }
 
-slideshow-controls:not([controls-on-media]):is([pagination-position='left'], [pagination-position='right']) .slideshow-controls__thumbnails {
+slideshow-controls:not([controls-on-media]):is([pagination-position='left'], [pagination-position='right'])
+  .slideshow-controls__thumbnails {
   padding-block: var(--padding-2xs);
 }
 
@@ -3567,14 +3589,14 @@ slideshow-controls:has(.slideshow-controls__dots) {
 
 slideshow-component:is([autoplay]) {
   &:is([paused]) {
-    .icon-play>svg {
+    .icon-play > svg {
       display: block;
       mix-blend-mode: difference;
     }
   }
 
   &:not([paused]) {
-    .icon-pause>svg {
+    .icon-pause > svg {
       display: block;
       mix-blend-mode: difference;
     }
@@ -3650,7 +3672,11 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   opacity: 1;
 }
 
-:not(.media-gallery--carousel)> :is(slideshow-component:hover, slideshow-component:focus-within):not(:has(slideshow-controls:hover))>slideshow-container>slideshow-arrows .slideshow-control {
+:not(.media-gallery--carousel)
+  > :is(slideshow-component:hover, slideshow-component:focus-within):not(:has(slideshow-controls:hover))
+  > slideshow-container
+  > slideshow-arrows
+  .slideshow-control {
   animation: arrowsSlideIn var(--animation-speed) var(--animation-easing) forwards;
 }
 
@@ -3696,16 +3722,17 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   display: none;
 }
 
-.section-resource-list.section--full-width product-card-link>.group-block {
+.section-resource-list.section--full-width product-card-link > .group-block {
   @media screen and (width < 750px) {
-    padding-inline: max(var(--padding-xs), var(--padding-inline-start)) max(var(--padding-xs), var(--padding-inline-end));
+    padding-inline: max(var(--padding-xs), var(--padding-inline-start))
+      max(var(--padding-xs), var(--padding-inline-end));
   }
 }
 
 .resource-list--carousel-mobile {
   display: block;
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     display: none;
   }
 }
@@ -3731,7 +3758,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   gap: var(--resource-list-row-gap) var(--resource-list-column-gap);
   grid-template-columns: var(--resource-list-columns-mobile);
 
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     grid-template-columns: var(--resource-list-columns);
   }
 
@@ -3739,7 +3766,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
     grid-template-columns: var(--resource-list-columns-mobile);
   }
 
-  @container resource-list (width >=450px) and (width < 750px) {
+  @container resource-list (width >= 450px) and (width < 750px) {
     --resource-list-columns-per-row: 3;
 
     grid-template-columns: repeat(var(--resource-list-columns-per-row), 1fr);
@@ -3752,7 +3779,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
     }
   }
 
-  @container resource-list (width >=750px) {
+  @container resource-list (width >= 750px) {
     grid-template-columns: repeat(var(--resource-list-columns-per-row), 1fr);
 
     &:has(.resource-list__item:first-child:nth-last-child(n + 9)) {
@@ -3776,7 +3803,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
     }
   }
 
-  @container resource-list (width >=1200px) {
+  @container resource-list (width >= 1200px) {
     &:has(.resource-list__item:first-child:nth-last-child(6)) {
       --resource-list-columns-per-row: 6;
     }
@@ -3812,9 +3839,12 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   }
 }
 
-@container resource-list-carousel (width >=750px) {
+@container resource-list-carousel (width >= 750px) {
   .resource-list__carousel .resource-list__slide {
-    --section-slide-width: calc((100% - (var(--resource-list-column-gap) * (var(--column-count) - 1)) - var(--peek-next-slide-size)) / var(--column-count));
+    --section-slide-width: calc(
+      (100% - (var(--resource-list-column-gap) * (var(--column-count) - 1)) - var(--peek-next-slide-size)) /
+        var(--column-count)
+    );
     --fallback-slide-width: clamp(150px, 60cqw, var(--slide-width-max));
     --slide-width: var(--section-slide-width, var(--fallback-slide-width));
   }
@@ -3867,15 +3897,15 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 }
 
 /* Flex behavior for width variants */
-.layout-panel-flex--row>.group-block--width-fit {
+.layout-panel-flex--row > .group-block--width-fit {
   flex: 0;
 }
 
-.layout-panel-flex--row>.group-block--width-fill {
+.layout-panel-flex--row > .group-block--width-fill {
   flex: 1;
 }
 
-.layout-panel-flex--row>.group-block--width-custom {
+.layout-panel-flex--row > .group-block--width-custom {
   flex-basis: var(--size-style-width);
 }
 
@@ -3890,15 +3920,15 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 }
 
 /* Flex behavior for height variants */
-.layout-panel-flex--column>.group-block--height-fit {
+.layout-panel-flex--column > .group-block--height-fit {
   flex: 0 1 auto;
 }
 
-.layout-panel-flex--column>.group-block--height-fill {
+.layout-panel-flex--column > .group-block--height-fill {
   flex: 1;
 }
 
-.layout-panel-flex--column>.group-block--height-custom {
+.layout-panel-flex--column > .group-block--height-custom {
   flex-basis: var(--size-style-height);
 }
 
@@ -3928,7 +3958,6 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 
 accordion-custom {
   details {
-
     &::details-content,
     .details-content {
       block-size: 0;
@@ -3942,7 +3971,6 @@ accordion-custom {
     }
 
     &:not([open]) {
-
       &::details-content,
       .details-content {
         padding-block: 0;
@@ -3950,7 +3978,6 @@ accordion-custom {
     }
 
     &[open] {
-
       &::details-content,
       .details-content {
         opacity: 1;
@@ -3977,7 +4004,7 @@ accordion-custom[data-disable-on-mobile='true'] summary {
 }
 
 accordion-custom[data-disable-on-desktop='true'] summary {
-  @media screen and (width >=750px) {
+  @media screen and (width >= 750px) {
     cursor: auto;
   }
 }
@@ -4000,10 +4027,12 @@ text-component {
     opacity: 0;
     transition: opacity var(--animation-speed-slow) var(--animation-easing);
     pointer-events: none;
-    background-image: linear-gradient(-85deg,
-        var(--shimmer-text-color) 10%,
-        var(--shimmer-color-light) 50%,
-        var(--shimmer-text-color) 90%);
+    background-image: linear-gradient(
+      -85deg,
+      var(--shimmer-text-color) 10%,
+      var(--shimmer-color-light) 50%,
+      var(--shimmer-text-color) 90%
+    );
     background-clip: text;
     background-size: 200% 100%;
     background-position: 100% 0;
