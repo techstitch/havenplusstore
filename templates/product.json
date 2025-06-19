@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -16,22 +17,22 @@
           "static": true,
           "settings": {
             "product": "{{ closest.product }}",
-            "media_presentation": "grid",
+            "media_presentation": "carousel",
             "media_columns": "two",
             "image_gap": 1,
             "large_first_image": true,
-            "icons_style": "none",
+            "icons_style": "chevron",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "bottom",
             "thumbnail_width": 44,
             "aspect_ratio": "1",
             "media_radius": 0,
-            "extend_media": true,
+            "extend_media": false,
             "constrain_to_viewport": false,
             "zoom": true,
-            "video_loop": false,
-            "hide_variants": false,
+            "video_loop": true,
+            "hide_variants": true,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -43,12 +44,14 @@
           "type": "_product-details",
           "static": true,
           "settings": {
-            "gap": 12,
-            "sticky_details_desktop": true,
             "width": "custom",
             "custom_width": 90,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 12,
+            "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
@@ -111,6 +114,12 @@
                 "type_preset": "h4",
                 "width": "100%",
                 "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
                 "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -213,7 +222,7 @@
         "product": "{{ closest.product }}",
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 8,
         "color_scheme": "scheme-1",
@@ -264,6 +273,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -302,6 +312,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": true,
@@ -373,6 +384,12 @@
                         "type_preset": "paragraph",
                         "width": "fit-content",
                         "alignment": "right",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "color": "var(--color-foreground)",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -390,6 +407,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": true,
