@@ -112,7 +112,7 @@
                 "show_installments": true,
                 "show_tax_info": true,
                 "type_preset": "h4",
-                "width": "fit-content",
+                "width": "100%",
                 "alignment": "left",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -132,7 +132,7 @@
               "name": "t:names.product_inventory",
               "settings": {
                 "product": "{{ closest.product }}",
-                "inventory_threshold": 10,
+                "inventory_threshold": 15,
                 "show_inventory_quantity": true,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -147,7 +147,7 @@
               "settings": {
                 "text": "{{ closest.product.description }}",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-primary--family)",
