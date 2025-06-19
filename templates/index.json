@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_RkimKJ": {
       "type": "hero",
@@ -14,6 +15,7 @@
         "group_3cB4GW": {
           "type": "group",
           "settings": {
+            "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -79,7 +81,7 @@
                 "label": "Shop all →",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "link",
+                "style_class": "button",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -98,8 +100,10 @@
         "group_3cB4GW"
       ],
       "settings": {
+        "link": "shopify://collections/frontpage",
         "open_in_new_tab": false,
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/gigapixel-fee8f71cd3_1.jpg",
         "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -114,9 +118,11 @@
         "section_height_custom": 50,
         "color_scheme": "scheme-4",
         "toggle_overlay": false,
-        "overlay_color": "#000000",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
+        "overlay_color": "#0000002c",
+        "overlay_style": "gradient",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -198,6 +204,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -236,6 +243,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": true,
@@ -307,6 +315,12 @@
                         "type_preset": "paragraph",
                         "width": "fit-content",
                         "alignment": "right",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "color": "var(--color-foreground)",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -324,6 +338,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -452,6 +467,7 @@
           "type": "group",
           "name": "Caption",
           "settings": {
+            "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
