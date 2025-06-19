@@ -1444,8 +1444,7 @@ details[open] > summary .icon-plus .vertical,
 /* Product Media */
 media-gallery {
   display: block;
-  width: 100%;  padding-top: 100px;
-
+  width: 100%;
 }
 
 :where(media-gallery, .product-grid__item) {
