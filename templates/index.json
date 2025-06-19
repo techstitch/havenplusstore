@@ -580,7 +580,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Discover HavenPlus</p>",
+                "text": "<p>Portable Electric Espresso Machine</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -606,7 +606,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Your top choice for premium home food containers. Our lineup showcases state-of-the-art vacuum glass containers and stylish glass tiffin boxes, ensuring your food stays fresh and flavorsome. Whether you're packing lunch or organizing your pantry, Havenplus provides durable, eco-friendly solutions to suit every need. Experience the ideal balance of functionality and elegance with our automatic airtight, leak-proof containers, preserving taste and locking in nutrients flawlessly. </p>",
+                "text": "<p>Brew rich espresso on the go with the HavenPlus Portable Espresso Machine. It heats up in just 3-4 minutes, delivers 15-bar pressure for a smooth crema, and works with both Nespresso capsules and ground coffee. Rechargeable and travel-friendly, it brews 3–5 cups per charge with a compact, leak-proof design. Perfect for home, work, or travel.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -627,11 +627,27 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_F9rRDX": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://products/electric-kitchen-mini-grinder",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_BRFzjN",
-            "text_tKxhbY"
+            "text_tKxhbY",
+            "button_F9rRDX"
           ]
         }
       },
