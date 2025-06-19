@@ -580,7 +580,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>A Family Tradition of Bold, Fresh Flavor</h3>",
+                "text": "<p>Discover HavenPlus</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -606,7 +606,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Food has the power to connect generations. Whether it’s learning family recipes or the intense memories triggered by the flavors and aromas of our childhood.</p>",
+                "text": "<p>Your top choice for premium home food containers. Our lineup showcases state-of-the-art vacuum glass containers and stylish glass tiffin boxes, ensuring your food stays fresh and flavorsome. Whether you're packing lunch or organizing your pantry, Havenplus provides durable, eco-friendly solutions to suit every need. Experience the ideal balance of functionality and elegance with our automatic airtight, leak-proof containers, preserving taste and locking in nutrients flawlessly. </p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -652,7 +652,7 @@
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
