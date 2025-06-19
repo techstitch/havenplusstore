@@ -1451,6 +1451,7 @@ media-gallery {
   .media-gallery__grid {
     grid-template-columns: 1fr;
     gap: var(--image-gap);
+    padding-top:100px;
   }
 }
 
