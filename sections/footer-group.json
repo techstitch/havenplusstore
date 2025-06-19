@@ -225,7 +225,7 @@
           "settings": {
             "divider_thickness": 0,
             "padding-block-start": 20,
-            "padding-block-end": 0
+            "padding-block-end": 20
           },
           "blocks": {
             "copyright": {
@@ -268,6 +268,14 @@
                   },
                   "blocks": {}
                 },
+                "social_link_jigLEi": {
+                  "type": "_social-link",
+                  "name": "TikTok",
+                  "settings": {
+                    "link": "https://tiktok.com/@shopify"
+                  },
+                  "blocks": {}
+                },
                 "social_link_mpc8iX": {
                   "type": "_social-link",
                   "name": "X / Twitter",
@@ -288,31 +296,18 @@
               "block_order": [
                 "social_link_9CNUzQ",
                 "social_link_hEPbgU",
+                "social_link_jigLEi",
                 "social_link_mpc8iX",
                 "social_link_YDz6K7"
               ]
             }
           },
           "block_order": []
-        },
-        "payment_icons_FGzX7L": {
-          "type": "payment-icons",
-          "name": "t:names.payment_icons",
-          "settings": {
-            "horizontal_alignment": "center",
-            "gap": 10,
-            "padding-block-start": 0,
-            "padding-block-end": 40,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
         "group_EUUkMF",
-        "footer_utilities_B7cUpb",
-        "payment_icons_FGzX7L"
+        "footer_utilities_B7cUpb"
       ],
       "name": "Footer",
       "settings": {
@@ -323,14 +318,13 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 20,
+        "gap": 44,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/gigapixel-fee8f71cd3_1.jpg",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
