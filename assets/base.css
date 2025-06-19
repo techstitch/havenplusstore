@@ -1441,6 +1441,10 @@ media-gallery {
   .media-gallery__grid {
     grid-template-columns: 1fr;
     gap: var(--image-gap);
+<<<<<<< HEAD
+=======
+    padding-top:70px;
+>>>>>>> 2680935fd58e97580e1a260762faad2e0365641e
   }
 }
 
