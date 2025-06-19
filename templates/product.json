@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -16,11 +17,11 @@
           "static": true,
           "settings": {
             "product": "{{ closest.product }}",
-            "media_presentation": "grid",
+            "media_presentation": "carousel",
             "media_columns": "two",
             "image_gap": 1,
             "large_first_image": true,
-            "icons_style": "none",
+            "icons_style": "chevron",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "bottom",
@@ -30,8 +31,8 @@
             "extend_media": true,
             "constrain_to_viewport": false,
             "zoom": true,
-            "video_loop": false,
-            "hide_variants": false,
+            "video_loop": true,
+            "hide_variants": true,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -43,12 +44,14 @@
           "type": "_product-details",
           "static": true,
           "settings": {
-            "gap": 12,
-            "sticky_details_desktop": true,
             "width": "custom",
-            "custom_width": 90,
+            "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 12,
+            "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
@@ -111,6 +114,12 @@
                 "type_preset": "h4",
                 "width": "100%",
                 "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
                 "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -162,7 +171,7 @@
               "type": "buy-buttons",
               "settings": {
                 "product": "{{ closest.product }}",
-                "stacking": false,
+                "stacking": true,
                 "show_pickup_availability": true,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -213,7 +222,7 @@
         "product": "{{ closest.product }}",
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 8,
         "color_scheme": "scheme-1",
@@ -224,6 +233,44 @@
     "product_recommendations_iA6pyd": {
       "type": "product-recommendations",
       "blocks": {
+        "divider_7PHfUW": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 30
+          },
+          "blocks": {}
+        },
+        "text_LnPkGL": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3>You may also like</h3>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "static-product-card": {
           "type": "product-card",
           "name": "t:names.product_card",
@@ -264,6 +311,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -302,6 +350,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": true,
@@ -373,6 +422,12 @@
                         "type_preset": "paragraph",
                         "width": "fit-content",
                         "alignment": "right",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "color": "var(--color-foreground)",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -390,6 +445,7 @@
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -468,19 +524,23 @@
           ]
         }
       },
+      "block_order": [
+        "divider_7PHfUW",
+        "text_LnPkGL"
+      ],
       "name": "t:names.product_recommendations",
       "settings": {
         "product": "{{ closest.product }}",
         "recommendation_type": "related",
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
-        "max_products": 6,
+        "max_products": 10,
         "columns": 3,
         "mobile_columns": "1",
         "columns_gap": 1,
         "rows_gap": 2,
-        "icons_style": "arrow",
-        "icons_shape": "none",
+        "icons_style": "chevron",
+        "icons_shape": "circle",
         "section_width": "full-width",
         "gap": 0,
         "color_scheme": "scheme-1",

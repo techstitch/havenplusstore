@@ -96,50 +96,8 @@
                   "type": "menu",
                   "name": "t:names.menu",
                   "settings": {
-                    "menu": "footer",
-                    "heading": "Shop",
-                    "menu_spacing": 4,
-                    "show_as_accordion": false,
-                    "accordion_icon": "caret",
-                    "accordion_dividers": false,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "heading_preset": "h4",
-                    "link_preset": "paragraph",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "menu_A6XnBJ": {
-                  "type": "menu",
-                  "name": "t:names.menu",
-                  "settings": {
-                    "menu": "",
-                    "heading": "Ask",
-                    "menu_spacing": 4,
-                    "show_as_accordion": false,
-                    "accordion_icon": "caret",
-                    "accordion_dividers": false,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "heading_preset": "h4",
-                    "link_preset": "paragraph",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "menu_xdWfdM": {
-                  "type": "menu",
-                  "name": "t:names.menu",
-                  "settings": {
-                    "menu": "",
-                    "heading": "Connect",
+                    "menu": "main-menu",
+                    "heading": "Useful Links",
                     "menu_spacing": 4,
                     "show_as_accordion": false,
                     "accordion_icon": "caret",
@@ -157,9 +115,7 @@
                 }
               },
               "block_order": [
-                "menu_zGVbCp",
-                "menu_A6XnBJ",
-                "menu_xdWfdM"
+                "menu_zGVbCp"
               ]
             },
             "group_dMjTNU": {
@@ -205,7 +161,7 @@
                   "type": "text",
                   "name": "Heading",
                   "settings": {
-                    "text": "<h3>We send tasty emails</h3>",
+                    "text": "<h3>Subscribe to our newsletter</h3>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -283,6 +239,7 @@
             },
             "policy_list": {
               "type": "_footer-policy-list",
+              "disabled": true,
               "static": true,
               "settings": {
                 "font_size": "0.75rem",
