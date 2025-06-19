@@ -28,7 +28,7 @@
             "thumbnail_width": 44,
             "aspect_ratio": "1",
             "media_radius": 0,
-            "extend_media": false,
+            "extend_media": true,
             "constrain_to_viewport": false,
             "zoom": true,
             "video_loop": true,
