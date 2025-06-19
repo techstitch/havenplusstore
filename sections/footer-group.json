@@ -299,8 +299,8 @@
           "type": "payment-icons",
           "name": "t:names.payment_icons",
           "settings": {
-            "horizontal_alignment": "center",
-            "gap": 24,
+            "horizontal_alignment": "flex-end",
+            "gap": 15,
             "padding-block-start": 0,
             "padding-block-end": 40,
             "padding-inline-start": 0,
