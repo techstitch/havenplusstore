@@ -163,8 +163,8 @@
       "settings": {
         "movement_direction": "normal",
         "color_scheme": "",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
+        "padding-block-start": 35,
+        "padding-block-end": 0,
         "gap_between_elements": 24
       }
     },
