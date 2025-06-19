@@ -127,6 +127,20 @@
               },
               "blocks": {}
             },
+            "product_inventory_4PDLMK": {
+              "type": "product-inventory",
+              "name": "t:names.product_inventory",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "inventory_threshold": 10,
+                "show_inventory_quantity": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_gXMUag": {
               "type": "text",
               "name": "Product description",
@@ -212,6 +226,7 @@
             "heading_m7KmQQ",
             "reviews",
             "price_a7krng",
+            "product_inventory_4PDLMK",
             "text_gXMUag",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi"
