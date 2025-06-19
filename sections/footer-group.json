@@ -299,7 +299,7 @@
           "type": "payment-icons",
           "name": "t:names.payment_icons",
           "settings": {
-            "horizontal_alignment": "flex-end",
+            "horizontal_alignment": "center",
             "gap": 10,
             "padding-block-start": 0,
             "padding-block-end": 40,
