@@ -78,7 +78,7 @@
             "button_nazDaa": {
               "type": "button",
               "settings": {
-                "label": "Shop all →",
+                "label": "Shop all",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button",
