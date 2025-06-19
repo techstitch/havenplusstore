@@ -495,7 +495,7 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 16,
+        "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
         "columns_gap": 0,
