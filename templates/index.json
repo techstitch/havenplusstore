@@ -167,7 +167,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>explore bestsellers</h2>",
+                "text": "<h2>explore our bestsellers</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
