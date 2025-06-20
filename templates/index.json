@@ -55,7 +55,7 @@
               "settings": {
                 "text": "<p>Savor every. last. bite. </p>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "center",
                 "type_preset": "h2",
                 "font": "var(--font-primary--family)",
@@ -64,7 +64,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "",
+                "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
