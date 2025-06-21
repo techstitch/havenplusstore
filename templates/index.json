@@ -989,8 +989,8 @@
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
-            "padding-block-start": 40,
-            "padding-block-end": 40,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 40,
             "padding-inline-end": 40
           },
@@ -1001,9 +1001,9 @@
               "settings": {
                 "text": "<p>Portable Electric Espresso Machine</p>",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "h2",
                 "font": "var(--font-primary--family)",
                 "font_size": "",
                 "line_height": "normal",
@@ -1052,7 +1052,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Shop now",
-                "link": "shopify://products/electric-kitchen-mini-grinder",
+                "link": "shopify://products/portable-espresso-machine",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
