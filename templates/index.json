@@ -1463,17 +1463,15 @@
     "product_list_EnPYTR": {
       "type": "product-list",
       "blocks": {
-        "spacer_pmBQkT": {
-          "type": "spacer",
-          "name": "t:names.spacer",
+        "divider_PNFDai": {
+          "type": "_divider",
+          "name": "t:names.divider",
           "settings": {
-            "size": "pixel",
-            "percent_size": 100,
-            "pixel_size": 236,
-            "custom_mobile_size": true,
-            "size_mobile": "pixel",
-            "percent_size_mobile": 100,
-            "pixel_size_mobile": 244
+            "thickness": 0.5,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 25
           },
           "blocks": {}
         },
@@ -1898,7 +1896,7 @@
         }
       },
       "block_order": [
-        "spacer_pmBQkT",
+        "divider_PNFDai",
         "button_d6qkQE"
       ],
       "name": "t:names.products_grid",
