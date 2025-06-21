@@ -15,14 +15,14 @@
         "group_3cB4GW": {
           "type": "group",
           "settings": {
-            "link": "",
+            "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "custom",
@@ -55,8 +55,8 @@
               "settings": {
                 "text": "<p>Savor every. last. bite. </p>",
                 "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
+                "max_width": "none",
+                "alignment": "center",
                 "type_preset": "h2",
                 "font": "var(--font-primary--family)",
                 "font_size": "",
@@ -78,14 +78,14 @@
             "button_nazDaa": {
               "type": "button",
               "settings": {
-                "label": "Shop all",
+                "label": "Shop",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "width": "custom",
+                "custom_width": 40,
+                "width_mobile": "custom",
+                "custom_width_mobile": 69
               },
               "blocks": {}
             }
@@ -102,19 +102,20 @@
       "settings": {
         "link": "shopify://collections/frontpage",
         "open_in_new_tab": false,
-        "media_type_1": "image",
+        "media_type_1": "video",
         "image_1": "shopify://shop_images/gigapixel-fee8f71cd3_1.jpg",
+        "video_1": "shopify://files/videos/0_Woman_Shopping_3840x2160 (1).mp4",
         "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
-        "section_width": "page-width",
-        "section_height": "large",
+        "section_width": "full-width",
+        "section_height": "medium",
         "section_height_custom": 50,
         "color_scheme": "scheme-4",
         "toggle_overlay": false,
