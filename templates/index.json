@@ -480,8 +480,8 @@
       "settings": {
         "movement_direction": "reverse",
         "color_scheme": "",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
+        "padding-block-start": 52,
+        "padding-block-end": 52,
         "gap_between_elements": 24
       }
     },
@@ -925,7 +925,7 @@
         "horizontal_alignment": "center",
         "gap": 0,
         "color_scheme": "scheme-1",
-        "padding-block-start": 35,
+        "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
