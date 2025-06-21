@@ -1469,7 +1469,7 @@
           "settings": {
             "size": "pixel",
             "percent_size": 100,
-            "pixel_size": 120,
+            "pixel_size": 236,
             "custom_mobile_size": false,
             "size_mobile": "percent",
             "percent_size_mobile": 100,
@@ -1576,27 +1576,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "product_list_button_WNEQ3J": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "collection": "{{ closest.collection }}",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_XPDLKt",
-            "text_VBPi9N",
-            "product_list_button_WNEQ3J"
+            "text_VBPi9N"
           ]
         },
         "static-product-card": {
