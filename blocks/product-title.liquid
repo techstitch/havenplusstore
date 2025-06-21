@@ -4,8 +4,8 @@
   {% render 'text', fallback_text: product_title, block: block %}
 {% elsif block.settings.product != blank %}
   {% assign full_title = block.settings.product.title %}
-  {% if full_title.size > 20 %}
-    {% assign truncated_title = full_title | slice: 0, 20 | append: '...' %}
+  {% if full_title.size > 15 %}
+    {% assign truncated_title = full_title | slice: 0, 15 | append: '...' %}
   {% else %}
     {% assign truncated_title = full_title %}
   {% endif %}
