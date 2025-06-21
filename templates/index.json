@@ -15,7 +15,7 @@
         "group_3cB4GW": {
           "type": "group",
           "settings": {
-            "link": "shopify://collections/all-products",
+            "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
