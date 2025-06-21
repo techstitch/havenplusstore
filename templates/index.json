@@ -521,6 +521,7 @@
                 "button_rJjna4": {
                   "type": "button",
                   "name": "t:names.button",
+                  "disabled": true,
                   "settings": {
                     "label": "Shop now",
                     "link": "{{ closest.product.url }}",
@@ -532,12 +533,56 @@
                     "custom_width_mobile": 100
                   },
                   "blocks": {}
+                },
+                "buy_buttons_T8jPqb": {
+                  "type": "buy-buttons",
+                  "name": "t:names.product_buy_buttons",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "stacking": false,
+                    "show_pickup_availability": false,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "quantity": {
+                      "type": "quantity",
+                      "disabled": true,
+                      "static": true,
+                      "settings": {
+                        "product": "{{ closest.product }}"
+                      },
+                      "blocks": {}
+                    },
+                    "add-to-cart": {
+                      "type": "add-to-cart",
+                      "static": true,
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "style_class": "button"
+                      },
+                      "blocks": {}
+                    },
+                    "accelerated-checkout": {
+                      "type": "accelerated-checkout",
+                      "disabled": true,
+                      "static": true,
+                      "settings": {
+                        "product": "{{ closest.product }}"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": []
                 }
               },
               "block_order": [
                 "group_pLH7Cd",
                 "group_3Fwdtp",
-                "button_rJjna4"
+                "button_rJjna4",
+                "buy_buttons_T8jPqb"
               ]
             }
           },
