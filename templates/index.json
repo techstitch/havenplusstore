@@ -479,10 +479,10 @@
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "reverse",
-        "color_scheme": "",
-        "padding-block-start": 52,
-        "padding-block-end": 52,
-        "gap_between_elements": 24
+        "color_scheme": "scheme-4",
+        "padding-block-start": 15,
+        "padding-block-end": 15,
+        "gap_between_elements": 20
       }
     },
     "product_list_X8Q7bi": {
@@ -926,7 +926,7 @@
         "horizontal_alignment": "center",
         "gap": 0,
         "color_scheme": "scheme-1",
-        "padding-block-start": 0,
+        "padding-block-start": 52,
         "padding-block-end": 52
       }
     },
@@ -1658,14 +1658,14 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 64,
-        "padding-block-end": 64
+        "padding-block-start": 52,
+        "padding-block-end": 52
       }
     },
-    "marquee_Ccf8w3": {
+    "marquee_UCzJEz": {
       "type": "marquee",
       "blocks": {
-        "text_W7xdhE": {
+        "text_hBNRL8": {
           "type": "text",
           "settings": {
             "text": "<p>Freshness</p>",
@@ -1690,7 +1690,7 @@
           },
           "blocks": {}
         },
-        "icon_TpBLc3": {
+        "icon_WwQ8hz": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1701,7 +1701,7 @@
           },
           "blocks": {}
         },
-        "text_E3bazn": {
+        "text_WmAYVG": {
           "type": "text",
           "settings": {
             "text": "<p>Elegance</p>",
@@ -1726,7 +1726,7 @@
           },
           "blocks": {}
         },
-        "icon_MAiQqk": {
+        "icon_jrH9aM": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1737,7 +1737,7 @@
           },
           "blocks": {}
         },
-        "text_mAD4nR": {
+        "text_yhGkeA": {
           "type": "text",
           "settings": {
             "text": "<p>Durability </p>",
@@ -1762,7 +1762,7 @@
           },
           "blocks": {}
         },
-        "icon_A9rGgY": {
+        "icon_G84KJd": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1773,7 +1773,7 @@
           },
           "blocks": {}
         },
-        "text_WUF7Yi": {
+        "text_MRctMC": {
           "type": "text",
           "settings": {
             "text": "<p>Airtight </p>",
@@ -1798,7 +1798,7 @@
           },
           "blocks": {}
         },
-        "icon_xp4FCX": {
+        "icon_Dfab9B": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1809,7 +1809,7 @@
           },
           "blocks": {}
         },
-        "text_dPrhzj": {
+        "text_EfDQeV": {
           "type": "text",
           "settings": {
             "text": "<p>Eco-Friendly</p>",
@@ -1834,7 +1834,7 @@
           },
           "blocks": {}
         },
-        "icon_ENa3YQ": {
+        "icon_aDRLPb": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1845,7 +1845,7 @@
           },
           "blocks": {}
         },
-        "text_phBkFc": {
+        "text_KdpKqg": {
           "type": "text",
           "settings": {
             "text": "<p>Leak-Proof</p>",
@@ -1870,7 +1870,7 @@
           },
           "blocks": {}
         },
-        "icon_kxnNBq": {
+        "icon_CQqBjU": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1881,7 +1881,7 @@
           },
           "blocks": {}
         },
-        "text_fgADek": {
+        "text_MWx69c": {
           "type": "text",
           "settings": {
             "text": "<p>Minimal </p>",
@@ -1906,7 +1906,7 @@
           },
           "blocks": {}
         },
-        "icon_gfTkXC": {
+        "icon_RcraCg": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1917,7 +1917,7 @@
           },
           "blocks": {}
         },
-        "text_bUkyDh": {
+        "text_nJtMfn": {
           "type": "text",
           "settings": {
             "text": "<p>Reliable </p>",
@@ -1942,7 +1942,7 @@
           },
           "blocks": {}
         },
-        "icon_xPQpPF": {
+        "icon_xXdDJw": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1953,7 +1953,7 @@
           },
           "blocks": {}
         },
-        "text_AnhUiL": {
+        "text_terJMG": {
           "type": "text",
           "settings": {
             "text": "<p>Sustainable </p>",
@@ -1978,7 +1978,7 @@
           },
           "blocks": {}
         },
-        "icon_4EepAW": {
+        "icon_PJENWK": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1991,32 +1991,32 @@
         }
       },
       "block_order": [
-        "text_W7xdhE",
-        "icon_TpBLc3",
-        "text_E3bazn",
-        "icon_MAiQqk",
-        "text_mAD4nR",
-        "icon_A9rGgY",
-        "text_WUF7Yi",
-        "icon_xp4FCX",
-        "text_dPrhzj",
-        "icon_ENa3YQ",
-        "text_phBkFc",
-        "icon_kxnNBq",
-        "text_fgADek",
-        "icon_gfTkXC",
-        "text_bUkyDh",
-        "icon_xPQpPF",
-        "text_AnhUiL",
-        "icon_4EepAW"
+        "text_hBNRL8",
+        "icon_WwQ8hz",
+        "text_WmAYVG",
+        "icon_jrH9aM",
+        "text_yhGkeA",
+        "icon_G84KJd",
+        "text_MRctMC",
+        "icon_Dfab9B",
+        "text_EfDQeV",
+        "icon_aDRLPb",
+        "text_KdpKqg",
+        "icon_CQqBjU",
+        "text_MWx69c",
+        "icon_RcraCg",
+        "text_nJtMfn",
+        "icon_xXdDJw",
+        "text_terJMG",
+        "icon_PJENWK"
       ],
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "reverse",
-        "color_scheme": "",
-        "padding-block-start": 52,
-        "padding-block-end": 52,
-        "gap_between_elements": 24
+        "color_scheme": "scheme-4",
+        "padding-block-start": 15,
+        "padding-block-end": 15,
+        "gap_between_elements": 20
       }
     },
     "product_list_EnPYTR": {
@@ -2474,14 +2474,14 @@
         "horizontal_alignment": "center",
         "gap": 0,
         "color_scheme": "scheme-1",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 52,
+        "padding-block-end": 52
       }
     },
-    "marquee_iFLtc9": {
+    "marquee_zXpLii": {
       "type": "marquee",
       "blocks": {
-        "text_zfzCRk": {
+        "text_BqwHXb": {
           "type": "text",
           "settings": {
             "text": "<p>Freshness</p>",
@@ -2506,7 +2506,7 @@
           },
           "blocks": {}
         },
-        "icon_z8NWBp": {
+        "icon_4XijH4": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2517,7 +2517,7 @@
           },
           "blocks": {}
         },
-        "text_zgXpEa": {
+        "text_4DiNtH": {
           "type": "text",
           "settings": {
             "text": "<p>Elegance</p>",
@@ -2542,7 +2542,7 @@
           },
           "blocks": {}
         },
-        "icon_w9heUW": {
+        "icon_FAb9Bn": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2553,7 +2553,7 @@
           },
           "blocks": {}
         },
-        "text_K6dK4D": {
+        "text_aYDmRV": {
           "type": "text",
           "settings": {
             "text": "<p>Durability </p>",
@@ -2578,7 +2578,7 @@
           },
           "blocks": {}
         },
-        "icon_acMTeL": {
+        "icon_JJ9n8d": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2589,7 +2589,7 @@
           },
           "blocks": {}
         },
-        "text_9VN7wx": {
+        "text_pwXHya": {
           "type": "text",
           "settings": {
             "text": "<p>Airtight </p>",
@@ -2614,7 +2614,7 @@
           },
           "blocks": {}
         },
-        "icon_RpD8wk": {
+        "icon_brMAmC": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2625,7 +2625,7 @@
           },
           "blocks": {}
         },
-        "text_cHJarJ": {
+        "text_hMbnCb": {
           "type": "text",
           "settings": {
             "text": "<p>Eco-Friendly</p>",
@@ -2650,7 +2650,7 @@
           },
           "blocks": {}
         },
-        "icon_B39qNY": {
+        "icon_BE8Q8L": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2661,7 +2661,7 @@
           },
           "blocks": {}
         },
-        "text_QfNUDK": {
+        "text_JNTrdr": {
           "type": "text",
           "settings": {
             "text": "<p>Leak-Proof</p>",
@@ -2686,7 +2686,7 @@
           },
           "blocks": {}
         },
-        "icon_8jUKdm": {
+        "icon_J4PCVg": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2697,7 +2697,7 @@
           },
           "blocks": {}
         },
-        "text_9y6RQw": {
+        "text_rWCbQE": {
           "type": "text",
           "settings": {
             "text": "<p>Minimal </p>",
@@ -2722,7 +2722,7 @@
           },
           "blocks": {}
         },
-        "icon_r6tLP8": {
+        "icon_TLbLJW": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2733,7 +2733,7 @@
           },
           "blocks": {}
         },
-        "text_EtTqcN": {
+        "text_K77Nr7": {
           "type": "text",
           "settings": {
             "text": "<p>Reliable </p>",
@@ -2758,7 +2758,7 @@
           },
           "blocks": {}
         },
-        "icon_kDi3Mk": {
+        "icon_B3yFxm": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2769,7 +2769,7 @@
           },
           "blocks": {}
         },
-        "text_mBMMEh": {
+        "text_D97Bpy": {
           "type": "text",
           "settings": {
             "text": "<p>Sustainable </p>",
@@ -2794,7 +2794,7 @@
           },
           "blocks": {}
         },
-        "icon_aPbgRf": {
+        "icon_tAWfYM": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2807,32 +2807,32 @@
         }
       },
       "block_order": [
-        "text_zfzCRk",
-        "icon_z8NWBp",
-        "text_zgXpEa",
-        "icon_w9heUW",
-        "text_K6dK4D",
-        "icon_acMTeL",
-        "text_9VN7wx",
-        "icon_RpD8wk",
-        "text_cHJarJ",
-        "icon_B39qNY",
-        "text_QfNUDK",
-        "icon_8jUKdm",
-        "text_9y6RQw",
-        "icon_r6tLP8",
-        "text_EtTqcN",
-        "icon_kDi3Mk",
-        "text_mBMMEh",
-        "icon_aPbgRf"
+        "text_BqwHXb",
+        "icon_4XijH4",
+        "text_4DiNtH",
+        "icon_FAb9Bn",
+        "text_aYDmRV",
+        "icon_JJ9n8d",
+        "text_pwXHya",
+        "icon_brMAmC",
+        "text_hMbnCb",
+        "icon_BE8Q8L",
+        "text_JNTrdr",
+        "icon_J4PCVg",
+        "text_rWCbQE",
+        "icon_TLbLJW",
+        "text_K77Nr7",
+        "icon_B3yFxm",
+        "text_D97Bpy",
+        "icon_tAWfYM"
       ],
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "reverse",
-        "color_scheme": "",
-        "padding-block-start": 52,
-        "padding-block-end": 52,
-        "gap_between_elements": 24
+        "color_scheme": "scheme-4",
+        "padding-block-start": 15,
+        "padding-block-end": 15,
+        "gap_between_elements": 20
       }
     },
     "section_Pr7E4d": {
@@ -3113,8 +3113,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 52,
+        "padding-block-end": 52
       }
     }
   },
@@ -3125,9 +3125,9 @@
     "section_JFwfAR",
     "section_RhpYRt",
     "section_UdHEP3",
-    "marquee_Ccf8w3",
+    "marquee_UCzJEz",
     "product_list_EnPYTR",
-    "marquee_iFLtc9",
+    "marquee_zXpLii",
     "section_Pr7E4d"
   ]
 }
