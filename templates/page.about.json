@@ -365,6 +365,10 @@
           "block_order": []
         }
       },
+      "custom_css": [
+        ".collection-links__link{--min-font-size: unset;}",
+        ".custom-typography span{font-size: 2rem}"
+      ],
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
