@@ -4123,3 +4123,8 @@ text-component {
   transform: none;
   box-shadow: none;
 }
+@media(max-width:756px){
+  product-card .text-block.h5>*{
+    font-size: 1.2rem;
+  }
+}
