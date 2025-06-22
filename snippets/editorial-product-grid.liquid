@@ -7,9 +7,7 @@
   {% render 'editorial-product-grid', items: items %}
 {%- enddoc -%}
 
-{% if template == 'product' %}
-  {% if product.metafields.content.section_2_heading != null %}
-  {% endif %}
+{% if template != 'product' or (template == 'product' and product.metafields.content.section_2_heading) %}
   <div class="editorial-product__grid">
     <div class="editorial-product__spacer"></div>
 
