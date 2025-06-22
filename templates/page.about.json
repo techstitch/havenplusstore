@@ -1098,6 +1098,9 @@
         "group_B7ak7K",
         "group_zcYLwJ"
       ],
+      "custom_css": [
+        ".section-content-wrapper.section-content-wrapper{flex-wrap: wrap !important; display: flex; flex-flow: unset;}"
+      ],
       "name": "t:names.icons_with_text",
       "settings": {
         "content_direction": "row",
