@@ -691,6 +691,10 @@
         "group_tfcNLd",
         "group_BffKQz"
       ],
+      "custom_css": [
+        ".section-content-wrapper.section-content-wrapper {flex-wrap: wrap !important; display: flex; flex-flow: unset;}",
+        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.3rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
+      ],
       "name": "t:names.icons_with_text",
       "settings": {
         "content_direction": "row",
