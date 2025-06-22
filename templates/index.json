@@ -2829,7 +2829,7 @@
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "reverse",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
         "padding-block-start": 15,
         "padding-block-end": 15,
         "gap_between_elements": 20
