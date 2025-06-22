@@ -624,7 +624,7 @@
         ".collection-links__link {--min-font-size: unset;}",
         ".custom-typography span {font-size: 2rem;}",
         ".custom-typography sup {font-size: 0.75rem;}",
-        "@media (max-width: 756px) {.collection-links__link {background: #fff; color: #000; border-radius: 500px; padding: 6px 10px; } .custom-typography span {font-size: 1rem; } collection-links-component[layout=\"text\"] .collection-links__container {column-gap: 6px; }}"
+        "@media (max-width: 756px) {.collection-links__link {background: #365d5f; color: #fff; border-radius: 500px; padding: 6px 10px; } .custom-typography span {font-size: 1rem; } collection-links-component[layout=\"text\"] .collection-links__container {column-gap: 6px; }}"
       ],
       "name": "t:names.collection_links_spotlight",
       "settings": {
