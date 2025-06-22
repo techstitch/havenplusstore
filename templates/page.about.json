@@ -160,16 +160,17 @@
         "padding-block-end": 40
       }
     },
-    "section_CYdbPm": {
+    "section_Bxde9f": {
       "type": "section",
       "blocks": {
-        "text_HBej6V": {
+        "text_YjTGgQ": {
           "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "text": "<p>Purposefully Designed for Everyday Living</p>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "center",
+            "text": "<h2>What We Offer</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
             "type_preset": "h2",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -187,54 +188,12 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "text_a4irLe": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Havenplus began with a mission to upgrade the everyday — blending functionality, elegance, and innovation into every home essential. From smart coffee stations to organized pantries, we create products that simplify routines and elevate spaces.</p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_fnEnCD": {
-          "type": "button",
-          "settings": {
-            "label": "Shop now",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_HBej6V",
-        "text_a4irLe",
-        "button_fnEnCD"
+        "text_YjTGgQ"
       ],
-      "name": "t:names.pull_quote",
+      "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -243,11 +202,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 12,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -259,8 +218,73 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 52,
-        "padding-block-end": 52
+        "padding-block-start": 100,
+        "padding-block-end": 0
+      }
+    },
+    "collection_links_CRVgkT": {
+      "type": "collection-links",
+      "blocks": {
+        "link": {
+          "type": "_collection-link",
+          "static": true,
+          "settings": {
+            "collection": "{{ closest.collection }}",
+            "show_count": true
+          },
+          "blocks": {
+            "title": {
+              "type": "_inline-collection-title",
+              "name": "t:names.title",
+              "static": true,
+              "settings": {
+                "collection": "{{ closest.collection }}",
+                "font": "var(--font-subheading--family)",
+                "weight": "",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none"
+              },
+              "blocks": {}
+            },
+            "image": {
+              "type": "_image",
+              "static": true,
+              "settings": {
+                "image": "{{ closest.collection.image }}",
+                "height": "large",
+                "ratio": "square",
+                "border_radius": 20
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
+        }
+      },
+      "custom_css": [
+        ".collection-links__link {--min-font-size: unset;}",
+        ".custom-typography span {font-size: 2rem;}",
+        ".custom-typography sup {font-size: 0.75rem;}",
+        "@media (max-width: 756px) {.collection-links__link {background: #fff; color: #000; border-radius: 500px; padding: 6px 10px; } .custom-typography span {font-size: 1rem; } collection-links-component[layout=\"text\"] .collection-links__container {column-gap: 6px; }}"
+      ],
+      "name": "t:names.collection_links_spotlight",
+      "settings": {
+        "collection_list": [
+          "food-storage",
+          "electric-coffee-grinders",
+          "dressing-spice-dispensers",
+          "chopping-boards",
+          "single-serve-coffee-machines",
+          "fans"
+        ],
+        "layout": "text",
+        "section_width": "page-width",
+        "alignment": "center",
+        "image_position": "right",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 30,
+        "padding-block-end": 100
       }
     },
     "section_bmLpzB": {
@@ -490,133 +514,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    },
-    "section_Bxde9f": {
-      "type": "section",
-      "blocks": {
-        "text_YjTGgQ": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h2>What We Offer</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_YjTGgQ"
-      ],
-      "name": "t:names.custom_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 52,
-        "padding-block-end": 0
-      }
-    },
-    "collection_links_CRVgkT": {
-      "type": "collection-links",
-      "blocks": {
-        "link": {
-          "type": "_collection-link",
-          "static": true,
-          "settings": {
-            "collection": "{{ closest.collection }}",
-            "show_count": true
-          },
-          "blocks": {
-            "title": {
-              "type": "_inline-collection-title",
-              "name": "t:names.title",
-              "static": true,
-              "settings": {
-                "collection": "{{ closest.collection }}",
-                "font": "var(--font-subheading--family)",
-                "weight": "",
-                "line_height": "tight",
-                "letter_spacing": "normal",
-                "case": "none"
-              },
-              "blocks": {}
-            },
-            "image": {
-              "type": "_image",
-              "static": true,
-              "settings": {
-                "image": "{{ closest.collection.image }}",
-                "height": "large",
-                "ratio": "square",
-                "border_radius": 20
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": []
-        }
-      },
-      "custom_css": [
-        ".collection-links__link {--min-font-size: unset;}",
-        ".custom-typography span {font-size: 2rem;}",
-        ".custom-typography sup {font-size: 0.75rem;}",
-        "@media (max-width: 756px) {.collection-links__link {background: #fff; color: #000; border-radius: 500px; padding: 6px 10px; } .custom-typography span {font-size: 1rem; } collection-links-component[layout=\"text\"] .collection-links__container {column-gap: 6px; }}"
-      ],
-      "name": "t:names.collection_links_spotlight",
-      "settings": {
-        "collection_list": [
-          "food-storage",
-          "electric-coffee-grinders",
-          "dressing-spice-dispensers",
-          "chopping-boards",
-          "single-serve-coffee-machines",
-          "fans"
-        ],
-        "layout": "text",
-        "section_width": "page-width",
-        "alignment": "center",
-        "image_position": "right",
-        "color_scheme": "scheme-4",
-        "padding-block-start": 30,
-        "padding-block-end": 52
       }
     },
     "section_WrkDNh": {
@@ -1101,6 +998,109 @@
         "padding-block-end": 52
       }
     },
+    "section_CYdbPm": {
+      "type": "section",
+      "blocks": {
+        "text_HBej6V": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Purposefully Designed for Everyday Living</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_a4irLe": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Havenplus began with a mission to upgrade the everyday — blending functionality, elegance, and innovation into every home essential. From smart coffee stations to organized pantries, we create products that simplify routines and elevate spaces.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_fnEnCD": {
+          "type": "button",
+          "settings": {
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_HBej6V",
+        "text_a4irLe",
+        "button_fnEnCD"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 52
+      }
+    },
     "slideshow_cRC9zy": {
       "type": "slideshow",
       "blocks": {
@@ -1236,11 +1236,11 @@
   "order": [
     "main",
     "hero_6QKriH",
-    "section_CYdbPm",
-    "section_bmLpzB",
     "section_Bxde9f",
     "collection_links_CRVgkT",
+    "section_bmLpzB",
     "section_WrkDNh",
+    "section_CYdbPm",
     "slideshow_cRC9zy"
   ]
 }
