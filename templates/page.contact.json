@@ -9,6 +9,92 @@
  */
 {
   "sections": {
+    "hero_3rpizY": {
+      "type": "hero",
+      "blocks": {
+        "text_cWkdJp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re Here to Help</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_nATGgz": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>Questions? Feedback? Reach out anytime.</h6>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_cWkdJp",
+        "text_nATGgz"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "link": "",
+        "open_in_new_tab": false,
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
     "section": {
       "type": "section",
       "blocks": {
@@ -171,19 +257,20 @@
         "padding-block-end": 70
       }
     },
-    "hero_3rpizY": {
-      "type": "hero",
+    "section_j8qcrr": {
+      "type": "section",
       "blocks": {
-        "text_cWkdJp": {
+        "text_KMBEah": {
           "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "text": "<p>We’re Here to Help</p>",
+            "text": "<h3>Frequently asked questions</h3>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "h1",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -199,67 +286,257 @@
           },
           "blocks": {}
         },
-        "text_nATGgz": {
-          "type": "text",
+        "accordion_r3WFTE": {
+          "type": "accordion",
+          "name": "t:names.accordion",
           "settings": {
-            "text": "<h6>Questions? Feedback? Reach out anytime.</h6>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "icon": "plus",
+            "dividers": true,
+            "type_preset": "h6",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 32,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "accordion_row_UphWkG": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What makes Havenplus containers different from regular containers?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_9MAhFD": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our containers feature vacuum-sealed, airtight technology that locks in freshness, preserves nutrients, and prevents leaks — all wrapped in durable, elegant glass design.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_9MAhFD"
+              ]
+            },
+            "accordion_row_6QJ8nQ": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Are the containers microwave and dishwasher safe?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_9Tjhie": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes! All our glass containers are microwave, dishwasher, and freezer safe. Just remove any non-glass lids before heating.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_9Tjhie"
+              ]
+            },
+            "accordion_row_CL9BVw": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Can I use these containers for carrying lunch or liquids?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_3Xm8Uh": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Absolutely. Our containers are 100% leak-proof, making them perfect for on-the-go meals, including soups, curries, and salads.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_3Xm8Uh"
+              ]
+            },
+            "accordion_row_zN8Lb9": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What materials are used in Havenplus products?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_6iYypY": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We use high-quality, BPA-free borosilicate glass and food-safe silicone components to ensure safety, durability, and eco-friendliness.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_6iYypY"
+              ]
+            },
+            "accordion_row_FF63r6": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I activate the vacuum seal feature?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_zfLmNw": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our automatic vacuum-sealing mechanism activates as you close the lid. You’ll hear a soft click or feel the air release — that’s freshness being locked in.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_zfLmNw"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_UphWkG",
+            "accordion_row_6QJ8nQ",
+            "accordion_row_CL9BVw",
+            "accordion_row_zN8Lb9",
+            "accordion_row_FF63r6"
+          ]
         }
       },
       "block_order": [
-        "text_cWkdJp",
-        "text_nATGgz"
+        "text_KMBEah",
+        "accordion_r3WFTE"
       ],
-      "name": "t:names.hero",
+      "name": "t:names.faq_section",
       "settings": {
-        "link": "",
-        "open_in_new_tab": false,
-        "media_type_1": "image",
-        "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 32,
         "section_width": "page-width",
-        "section_height": "large",
+        "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-5",
-        "toggle_overlay": true,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
         "overlay_color": "#00000026",
-        "overlay_style": "gradient",
+        "overlay_style": "solid",
         "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 52,
+        "padding-block-end": 52
       }
     }
   },
   "order": [
     "hero_3rpizY",
-    "section"
+    "section",
+    "section_j8qcrr"
   ]
 }
