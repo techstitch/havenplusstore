@@ -1097,7 +1097,7 @@
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "custom",
-            "custom_width_mobile": 50,
+            "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -1385,7 +1385,7 @@
       ],
       "custom_css": [
         ".section-content-wrapper.section-content-wrapper {flex-wrap: wrap !important; display: flex; flex-flow: unset;}",
-        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.2rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
+        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.3rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
