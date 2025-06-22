@@ -1592,7 +1592,7 @@
         "text_i4yqkq": {
           "type": "text",
           "settings": {
-            "text": "<p>At the heart of every product lies a unique story, driven by our passion for quality and innovation. Each item enhances your everyday life and sparks joy.</p>",
+            "text": "<p><strong>Freshness You Can See.<br/>Design That Does More.</strong></p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1617,10 +1617,10 @@
         "button_L7aAhW": {
           "type": "button",
           "settings": {
-            "label": "Shop now",
+            "label": "Explore Collection",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
-            "style_class": "link",
+            "style_class": "button",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
