@@ -172,7 +172,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>New arrivals</h2>",
+                "text": "<h2>Get in touch</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -193,10 +193,37 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "text_QiP3wC": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>📍 <strong>Address:</strong> Dubai Internet City, Dubai Properties Headquarters Building, 1st Rd - off Al Falak St., Dubai, United Arab Emirates, 501797<br/>📧 <strong>Email:</strong> support@havenplus.com<br/>📞 <strong>Phone</strong>: +91-XXXXX-XXXXX<br/>🕒<strong> Working Hours:</strong> Mon–Sat, 10am to 6pm</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "balance",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "text_9kgNEd"
+            "text_9kgNEd",
+            "text_QiP3wC"
           ]
         }
       },
