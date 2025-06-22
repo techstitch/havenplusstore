@@ -948,8 +948,8 @@
             "gap": 16,
             "width": "fill",
             "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
+            "width_mobile": "custom",
+            "custom_width_mobile": 50,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -1096,8 +1096,8 @@
             "gap": 16,
             "width": "fill",
             "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
+            "width_mobile": "custom",
+            "custom_width_mobile": 50,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -1242,9 +1242,9 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
-            "width_mobile": "fill",
+            "width_mobile": "custom",
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
@@ -1385,7 +1385,7 @@
       ],
       "custom_css": [
         ".section-content-wrapper.section-content-wrapper {flex-wrap: wrap !important; display: flex; flex-flow: unset;}",
-        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.6rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
+        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.3rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
       ],
       "name": "t:names.icons_with_text",
       "settings": {

@@ -238,10 +238,10 @@
         "padding-block-end": 52
       }
     },
-    "section_BbYArK": {
+    "section_3byyYV": {
       "type": "section",
       "blocks": {
-        "group_DEmWjB": {
+        "group_tWTjFU": {
           "type": "group",
           "settings": {
             "link": "",
@@ -257,7 +257,7 @@
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "custom",
-            "custom_width_mobile": 35,
+            "custom_width_mobile": 50,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -279,7 +279,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_7taU7d": {
+            "icon_3ftVAA": {
               "type": "icon",
               "settings": {
                 "icon": "plant",
@@ -289,7 +289,7 @@
               },
               "blocks": {}
             },
-            "group_CPQw4r": {
+            "group_3mr4Hx": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -327,10 +327,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_yXmP3T": {
+                "text_VmJLAq": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sustainability Focus</p>",
+                    "text": "<p>Airtight Freshness</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -352,10 +352,10 @@
                   },
                   "blocks": {}
                 },
-                "text_EVLGgf": {
+                "text_p3pGz9": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Durable, reusable, eco-conscious materials</p>",
+                    "text": "<p>Locks in Flavor, Seals Out Air</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -379,17 +379,17 @@
                 }
               },
               "block_order": [
-                "text_yXmP3T",
-                "text_EVLGgf"
+                "text_VmJLAq",
+                "text_p3pGz9"
               ]
             }
           },
           "block_order": [
-            "icon_7taU7d",
-            "group_CPQw4r"
+            "icon_3ftVAA",
+            "group_3mr4Hx"
           ]
         },
-        "group_tfcNLd": {
+        "group_armnii": {
           "type": "group",
           "settings": {
             "link": "",
@@ -405,7 +405,7 @@
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "custom",
-            "custom_width_mobile": 35,
+            "custom_width_mobile": 50,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -427,17 +427,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_9icUck": {
+            "icon_km7Mba": {
               "type": "icon",
               "settings": {
-                "icon": "chat_bubble",
+                "icon": "recycle",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
               },
               "blocks": {}
             },
-            "group_Bw87pm": {
+            "group_drpqmB": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -475,10 +475,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_TpYkQh": {
+                "text_VeEQXw": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Thoughtful Design</p>",
+                    "text": "<h3><strong>Eco-Conscious Design</strong></h3>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -500,10 +500,10 @@
                   },
                   "blocks": {}
                 },
-                "text_XpXkYA": {
+                "text_gczehX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Products that look good and work even better</p>",
+                    "text": "<p>Sustainable, Reusable, Responsible</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -527,17 +527,17 @@
                 }
               },
               "block_order": [
-                "text_TpYkQh",
-                "text_XpXkYA"
+                "text_VeEQXw",
+                "text_gczehX"
               ]
             }
           },
           "block_order": [
-            "icon_9icUck",
-            "group_Bw87pm"
+            "icon_km7Mba",
+            "group_drpqmB"
           ]
         },
-        "group_BffKQz": {
+        "group_GzmrkF": {
           "type": "group",
           "settings": {
             "link": "",
@@ -550,9 +550,9 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
-            "width_mobile": "fill",
+            "width_mobile": "custom",
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
@@ -575,17 +575,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_8gdR6V": {
+            "icon_EXMFMR": {
               "type": "icon",
               "settings": {
-                "icon": "dryer",
+                "icon": "stopwatch",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
               },
               "blocks": {}
             },
-            "group_VEMjBF": {
+            "group_FDBBFi": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -623,10 +623,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_HMWkX3": {
+                "text_m8dK64": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Everyday Innovation</p>",
+                    "text": "<p>Made for Everyday</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -648,10 +648,10 @@
                   },
                   "blocks": {}
                 },
-                "text_HGMxkY": {
+                "text_bmgaqG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Smart features for smarter living</p>",
+                    "text": "<p>Stylish, Smart & Travel-Ready</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -675,21 +675,25 @@
                 }
               },
               "block_order": [
-                "text_HMWkX3",
-                "text_HGMxkY"
+                "text_m8dK64",
+                "text_bmgaqG"
               ]
             }
           },
           "block_order": [
-            "icon_8gdR6V",
-            "group_VEMjBF"
+            "icon_EXMFMR",
+            "group_FDBBFi"
           ]
         }
       },
       "block_order": [
-        "group_DEmWjB",
-        "group_tfcNLd",
-        "group_BffKQz"
+        "group_tWTjFU",
+        "group_armnii",
+        "group_GzmrkF"
+      ],
+      "custom_css": [
+        ".section-content-wrapper.section-content-wrapper {flex-wrap: wrap !important; display: flex; flex-flow: unset;}",
+        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.3rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
@@ -1562,7 +1566,7 @@
   },
   "order": [
     "main",
-    "section_BbYArK",
+    "section_3byyYV",
     "marquee_mUqeqP",
     "media_with_content_J9KjF7",
     "product_recommendations_wRrFmV",
