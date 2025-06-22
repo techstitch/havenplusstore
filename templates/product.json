@@ -1273,9 +1273,7 @@
           ]
         }
       },
-      "custom_css": [
-        ".section:has(.group-block-content p:empty) {display: none;}"
-      ],
+      "custom_css": [],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "right",
