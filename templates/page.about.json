@@ -428,7 +428,7 @@
             "icon_qCLzdw": {
               "type": "icon",
               "settings": {
-                "icon": "eye",
+                "icon": "chat_bubble",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -576,7 +576,7 @@
             "icon_NADbB7": {
               "type": "icon",
               "settings": {
-                "icon": "heart",
+                "icon": "dryer",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -724,7 +724,7 @@
             "icon_yJdaRW": {
               "type": "icon",
               "settings": {
-                "icon": "silhouette",
+                "icon": "plant",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
