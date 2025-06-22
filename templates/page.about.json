@@ -260,7 +260,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 52,
-        "padding-block-end": 0
+        "padding-block-end": 52
       }
     },
     "collection_links_CRVgkT": {
@@ -282,7 +282,7 @@
                 "collection": "{{ closest.collection }}",
                 "font": "var(--font-subheading--family)",
                 "weight": "",
-                "line_height": "normal",
+                "line_height": "tight",
                 "letter_spacing": "normal",
                 "case": "none"
               },
@@ -295,7 +295,7 @@
                 "image": "{{ closest.collection.image }}",
                 "height": "large",
                 "ratio": "square",
-                "border_radius": 0
+                "border_radius": 20
               },
               "blocks": {}
             }
@@ -317,7 +317,7 @@
         "section_width": "page-width",
         "alignment": "center",
         "image_position": "right",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "padding-block-start": 52,
         "padding-block-end": 52
       }
