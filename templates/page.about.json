@@ -380,7 +380,7 @@
           "single-serve-coffee-machines",
           "fans"
         ],
-        "layout": "spotlight",
+        "layout": "text",
         "section_width": "page-width",
         "alignment": "center",
         "image_position": "right",
