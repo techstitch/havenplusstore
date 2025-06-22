@@ -122,6 +122,7 @@
             "product_inventory_4PDLMK": {
               "type": "product-inventory",
               "name": "t:names.product_inventory",
+              "disabled": true,
               "settings": {
                 "product": "{{ closest.product }}",
                 "inventory_threshold": 15,
