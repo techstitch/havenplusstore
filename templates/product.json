@@ -529,7 +529,9 @@
         "judge_me_reviews_review_widget_EGbp37"
       ],
       "custom_css": [
-        ".shopify-app-block {width: 100%;}"
+        ".shopify-app-block {width: 100%;}",
+        ".jdgm-rev-widg.jdgm-rev-widg {padding-top: 0 !important; padding-bottom: 52px !important;}",
+        ".jdgm-rev-widg__title {display: none !important;}"
       ],
       "settings": {
         "content_direction": "column",
