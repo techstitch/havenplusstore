@@ -1107,7 +1107,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Where Function Meets Art</p>",
+                "text": "<p>{{ closest.product.metafields.content.section_2_caption.value }}</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1171,7 +1171,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><strong>Crafted to Impress, Built to Last</strong></p>",
+                    "text": "<p>{{ closest.product.metafields.content.section_2_heading.value }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1196,7 +1196,7 @@
                 "text_RdgJBm": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our Ebony Wood & Resin Cutting Board isn’t just for chopping—it’s a statement piece. With natural antibacterial properties, a blade-friendly surface, and a show-stopping design, it elevates every meal and every moment.</p>",
+                    "text": "<p>{{ closest.product.metafields.content.section_2_description.value }}</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -1282,7 +1282,7 @@
         "extend_media": false,
         "color_scheme": "scheme-1",
         "padding-block-start": 52,
-        "padding-block-end": 0
+        "padding-block-end": 52
       }
     },
     "product_recommendations_wRrFmV": {
