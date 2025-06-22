@@ -238,10 +238,10 @@
         "padding-block-end": 52
       }
     },
-    "section_qAXQTB": {
+    "section_3byyYV": {
       "type": "section",
       "blocks": {
-        "group_wxzVhL": {
+        "group_tWTjFU": {
           "type": "group",
           "settings": {
             "link": "",
@@ -279,7 +279,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_ctUxyK": {
+            "icon_3ftVAA": {
               "type": "icon",
               "settings": {
                 "icon": "plant",
@@ -289,7 +289,7 @@
               },
               "blocks": {}
             },
-            "group_PteLTE": {
+            "group_3mr4Hx": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -327,7 +327,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_Wm7Vcx": {
+                "text_VmJLAq": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Airtight Freshness</p>",
@@ -352,7 +352,7 @@
                   },
                   "blocks": {}
                 },
-                "text_y4rbgt": {
+                "text_p3pGz9": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Locks in Flavor, Seals Out Air</p>",
@@ -379,17 +379,17 @@
                 }
               },
               "block_order": [
-                "text_Wm7Vcx",
-                "text_y4rbgt"
+                "text_VmJLAq",
+                "text_p3pGz9"
               ]
             }
           },
           "block_order": [
-            "icon_ctUxyK",
-            "group_PteLTE"
+            "icon_3ftVAA",
+            "group_3mr4Hx"
           ]
         },
-        "group_TDEp8m": {
+        "group_armnii": {
           "type": "group",
           "settings": {
             "link": "",
@@ -427,7 +427,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_zQe3j7": {
+            "icon_km7Mba": {
               "type": "icon",
               "settings": {
                 "icon": "recycle",
@@ -437,7 +437,7 @@
               },
               "blocks": {}
             },
-            "group_BpKfKD": {
+            "group_drpqmB": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -475,7 +475,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_WmndTY": {
+                "text_VeEQXw": {
                   "type": "text",
                   "settings": {
                     "text": "<h3><strong>Eco-Conscious Design</strong></h3>",
@@ -500,7 +500,7 @@
                   },
                   "blocks": {}
                 },
-                "text_HzgkMe": {
+                "text_gczehX": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Sustainable, Reusable, Responsible</p>",
@@ -527,17 +527,17 @@
                 }
               },
               "block_order": [
-                "text_WmndTY",
-                "text_HzgkMe"
+                "text_VeEQXw",
+                "text_gczehX"
               ]
             }
           },
           "block_order": [
-            "icon_zQe3j7",
-            "group_BpKfKD"
+            "icon_km7Mba",
+            "group_drpqmB"
           ]
         },
-        "group_yQgakb": {
+        "group_GzmrkF": {
           "type": "group",
           "settings": {
             "link": "",
@@ -550,7 +550,7 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
             "width_mobile": "custom",
             "custom_width_mobile": 100,
@@ -575,7 +575,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_xtQgDa": {
+            "icon_EXMFMR": {
               "type": "icon",
               "settings": {
                 "icon": "stopwatch",
@@ -585,7 +585,7 @@
               },
               "blocks": {}
             },
-            "group_RGwB94": {
+            "group_FDBBFi": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -623,7 +623,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_d69aen": {
+                "text_m8dK64": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Made for Everyday</p>",
@@ -648,7 +648,7 @@
                   },
                   "blocks": {}
                 },
-                "text_giyT9a": {
+                "text_bmgaqG": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Stylish, Smart & Travel-Ready</p>",
@@ -675,25 +675,21 @@
                 }
               },
               "block_order": [
-                "text_d69aen",
-                "text_giyT9a"
+                "text_m8dK64",
+                "text_bmgaqG"
               ]
             }
           },
           "block_order": [
-            "icon_xtQgDa",
-            "group_RGwB94"
+            "icon_EXMFMR",
+            "group_FDBBFi"
           ]
         }
       },
       "block_order": [
-        "group_wxzVhL",
-        "group_TDEp8m",
-        "group_yQgakb"
-      ],
-      "custom_css": [
-        ".section-content-wrapper.section-content-wrapper {flex-wrap: wrap !important; display: flex; flex-flow: unset;}",
-        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.3rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
+        "group_tWTjFU",
+        "group_armnii",
+        "group_GzmrkF"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
@@ -720,7 +716,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 52,
+        "padding-block-start": 0,
         "padding-block-end": 52
       }
     },
@@ -1566,7 +1562,7 @@
   },
   "order": [
     "main",
-    "section_qAXQTB",
+    "section_3byyYV",
     "marquee_mUqeqP",
     "media_with_content_J9KjF7",
     "product_recommendations_wRrFmV",
