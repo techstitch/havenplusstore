@@ -27,6 +27,7 @@
     "type_case_h5": "uppercase",
     "type_case_h6": "uppercase",
     "card_hover_effect": "lift",
+    "badge_font_family": "subheading",
     "button_border_radius_primary": 100,
     "type_font_button_primary": "accent",
     "button_font_weight_primary": "600",
