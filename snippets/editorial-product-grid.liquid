@@ -7,7 +7,7 @@
   {% render 'editorial-product-grid', items: items %}
 {%- enddoc -%}
 
-{% if template != 'product' %}
+{% if template != 'products' %}
   <div class="editorial-product__grid">
     <div class="editorial-product__spacer"></div>
 
@@ -62,7 +62,7 @@
       </div>
     {% endfor %}
   </div>
-{% elsif template == 'product' %}
+{% elsif template == 'products' %}
   {% if product.metafields.content.section_2_heading != null %}
     <div class="editorial-product__grid">
       <div class="editorial-product__spacer"></div>
