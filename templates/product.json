@@ -448,18 +448,16 @@
         "padding-block-end": 0
       }
     },
-    "17505816343125b055": {
+    "1750581678d96cd526": {
       "type": "_blocks",
       "blocks": {
-        "judge_me_reviews_featured_carousel_VxWCGn": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
+        "judge_me_reviews_review_widget_Me6nT7": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_featured_carousel_VxWCGn"
+        "judge_me_reviews_review_widget_Me6nT7"
       ],
       "settings": {
         "content_direction": "column",
@@ -467,7 +465,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
@@ -489,16 +487,18 @@
         "padding-block-end": 0
       }
     },
-    "1750581678d96cd526": {
+    "17505816343125b055": {
       "type": "_blocks",
       "blocks": {
-        "judge_me_reviews_review_widget_Me6nT7": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "judge_me_reviews_featured_carousel_VxWCGn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_Me6nT7"
+        "judge_me_reviews_featured_carousel_VxWCGn"
       ],
       "settings": {
         "content_direction": "column",
@@ -506,7 +506,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
