@@ -1274,8 +1274,7 @@
         }
       },
       "custom_css": [
-        ".group-block-content p:empty {display: none;}",
-        ".group-block-content:has(p:empty) {display: none;}"
+        ".section:has(.group-block-content p:empty) {display: none;}"
       ],
       "name": "t:names.editorial",
       "settings": {
