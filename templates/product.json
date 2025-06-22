@@ -1198,7 +1198,7 @@
                   "settings": {
                     "text": "<p>{{ closest.product.metafields.content.section_2_description.value }}</p>",
                     "width": "fit-content",
-                    "max_width": "narrow",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
