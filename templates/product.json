@@ -1223,8 +1223,8 @@
                   "name": "t:names.product_buy_buttons",
                   "settings": {
                     "product": "{{ closest.product }}",
-                    "stacking": false,
-                    "show_pickup_availability": true,
+                    "stacking": true,
+                    "show_pickup_availability": false,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -1250,7 +1250,6 @@
                     },
                     "accelerated-checkout": {
                       "type": "accelerated-checkout",
-                      "disabled": true,
                       "static": true,
                       "settings": {
                         "product": "{{ closest.product }}"
