@@ -461,6 +461,7 @@
       "block_order": [
         "judge_me_reviews_featured_carousel_VxWCGn"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
