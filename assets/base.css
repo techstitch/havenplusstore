@@ -4126,6 +4126,6 @@ text-component {
 @media(max-width:756px){
   product-card .text-block.h5>*{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 900 !important;
   }
 }
