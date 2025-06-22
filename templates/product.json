@@ -199,7 +199,7 @@
                   "static": true,
                   "settings": {
                     "product": "{{ closest.product }}",
-                    "style_class": "button"
+                    "style_class": "button-secondary"
                   },
                   "blocks": {}
                 },
