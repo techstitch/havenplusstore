@@ -368,7 +368,7 @@
       "custom_css": [
         ".collection-links__link {--min-font-size: unset;}",
         ".custom-typography span {font-size: 2rem;}",
-        ".custom-typography span sup {font-size: .75rem;}"
+        ".custom-typography sup {font-size: 0.75rem;}"
       ],
       "name": "t:names.collection_links_spotlight",
       "settings": {
