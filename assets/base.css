@@ -3839,7 +3839,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 }
 
 .resource-list__carousel slideshow-arrows {
-  padding-inline: calc(var(--util-page-margin-offset) - 30px);
+  padding-inline: calc(var(--util-page-margin-offset) - 50px);
 }
 
 .resource-list__carousel .resource-list__slide {
