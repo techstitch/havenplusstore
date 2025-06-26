@@ -1793,6 +1793,18 @@
             "padding-inline-end": 40
           },
           "blocks": {
+            "icon_G94Rri": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/best-seller_7189668_1.png",
+                "width": 42,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
             "text_BRFzjN": {
               "type": "text",
               "name": "t:names.heading",
@@ -1862,6 +1874,7 @@
             }
           },
           "block_order": [
+            "icon_G94Rri",
             "text_BRFzjN",
             "text_tKxhbY",
             "button_F9rRDX"
