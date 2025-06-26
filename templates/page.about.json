@@ -645,10 +645,10 @@
         "padding-block-end": 52
       }
     },
-    "section_WrkDNh": {
+    "section_q6X993": {
       "type": "section",
       "blocks": {
-        "group_Q4zwTT": {
+        "group_dGPetg": {
           "type": "group",
           "settings": {
             "link": "",
@@ -661,10 +661,10 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "custom",
-            "custom_width_mobile": 35,
+            "width": "custom",
+            "custom_width": 30,
+            "width_mobile": "fill",
+            "custom_width_mobile": 49,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -686,7 +686,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_yJdaRW": {
+            "icon_3RBiFR": {
               "type": "icon",
               "settings": {
                 "icon": "plant",
@@ -696,7 +696,7 @@
               },
               "blocks": {}
             },
-            "group_QgzP7f": {
+            "group_NA79D6": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -734,10 +734,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_mpFGXp": {
+                "text_N9T4b9": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sustainability Focus</p>",
+                    "text": "<p>Eco Kitchenware</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -759,10 +759,10 @@
                   },
                   "blocks": {}
                 },
-                "text_94X7bD": {
+                "text_KtUpJw": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Durable, reusable, eco-conscious materials</p>",
+                    "text": "<p>Low-waste, reusable design</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -786,17 +786,17 @@
                 }
               },
               "block_order": [
-                "text_mpFGXp",
-                "text_94X7bD"
+                "text_N9T4b9",
+                "text_KtUpJw"
               ]
             }
           },
           "block_order": [
-            "icon_yJdaRW",
-            "group_QgzP7f"
+            "icon_3RBiFR",
+            "group_NA79D6"
           ]
         },
-        "group_B7ak7K": {
+        "group_rPPQBb": {
           "type": "group",
           "settings": {
             "link": "",
@@ -809,10 +809,10 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "custom",
-            "custom_width_mobile": 35,
+            "width": "custom",
+            "custom_width": 30,
+            "width_mobile": "fill",
+            "custom_width_mobile": 49,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": true,
@@ -834,17 +834,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_qCLzdw": {
+            "icon_AkeC7X": {
               "type": "icon",
               "settings": {
-                "icon": "chat_bubble",
+                "icon": "box",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
               },
               "blocks": {}
             },
-            "group_nD83Vx": {
+            "group_JeR484": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -882,10 +882,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_p8hWMk": {
+                "text_wk7KXk": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Thoughtful Design</p>",
+                    "text": "<p>Smart Storage</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -907,10 +907,10 @@
                   },
                   "blocks": {}
                 },
-                "text_3VDrKK": {
+                "text_VHxMD3": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Products that look good and work even better</p>",
+                    "text": "<p>Keeps food fresh longer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -934,17 +934,17 @@
                 }
               },
               "block_order": [
-                "text_p8hWMk",
-                "text_3VDrKK"
+                "text_wk7KXk",
+                "text_VHxMD3"
               ]
             }
           },
           "block_order": [
-            "icon_qCLzdw",
-            "group_nD83Vx"
+            "icon_AkeC7X",
+            "group_JeR484"
           ]
         },
-        "group_zcYLwJ": {
+        "group_PLaCak": {
           "type": "group",
           "settings": {
             "link": "",
@@ -957,8 +957,304 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
+            "width": "custom",
+            "custom_width": 30,
+            "width_mobile": "fill",
+            "custom_width_mobile": 49,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_nWb97C": {
+              "type": "icon",
+              "settings": {
+                "icon": "bottle",
+                "width": 32,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "group_wQdfqQ": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_perQTr": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Brew Better</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_wWHcBM": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Tools for daily coffee</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_perQTr",
+                "text_wWHcBM"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_nWb97C",
+            "group_wQdfqQ"
+          ]
+        },
+        "group_YfkRwT": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "custom",
+            "custom_width": 30,
+            "width_mobile": "fill",
+            "custom_width_mobile": 49,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_EEA6gt": {
+              "type": "icon",
+              "settings": {
+                "icon": "stopwatch",
+                "width": 32,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "group_Viy89y": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_qkyPgV": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Easy Prep</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_hxkqVR": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>No mess, quick clean</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_qkyPgV",
+                "text_hxkqVR"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_EEA6gt",
+            "group_Viy89y"
+          ]
+        },
+        "group_PYBB6d": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "custom",
+            "custom_width": 30,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -982,17 +1278,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_NADbB7": {
+            "icon_LWxbQq": {
               "type": "icon",
               "settings": {
-                "icon": "dryer",
+                "icon": "snowflake",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
               },
               "blocks": {}
             },
-            "group_wFyYP6": {
+            "group_tQKqai": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -1030,10 +1326,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_NgeHjp": {
+                "text_B7z8jT": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Everyday Innovation</p>",
+                    "text": "<p>Cool Comfort</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1055,10 +1351,10 @@
                   },
                   "blocks": {}
                 },
-                "text_zFRrNV": {
+                "text_fCeEf4": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Smart features for smarter living</p>",
+                    "text": "<p>Sleek fans, quiet power</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1082,31 +1378,29 @@
                 }
               },
               "block_order": [
-                "text_NgeHjp",
-                "text_zFRrNV"
+                "text_B7z8jT",
+                "text_fCeEf4"
               ]
             }
           },
           "block_order": [
-            "icon_NADbB7",
-            "group_wFyYP6"
+            "icon_LWxbQq",
+            "group_tQKqai"
           ]
         }
       },
       "block_order": [
-        "group_Q4zwTT",
-        "group_B7ak7K",
-        "group_zcYLwJ"
-      ],
-      "custom_css": [
-        ".section-content-wrapper.section-content-wrapper {flex-wrap: wrap !important; display: flex; flex-flow: unset;}",
-        "@media (max-width: 756px) {.text-block.h3 > * {font-size: 1.3rem; } .section-content-wrapper.section-content-wrapper {row-gap: 50px; }}"
+        "group_dGPetg",
+        "group_rPPQBb",
+        "group_PLaCak",
+        "group_YfkRwT",
+        "group_PYBB6d"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
+        "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
@@ -1601,7 +1895,7 @@
     "marquee_xGpD3P",
     "section_Bxde9f",
     "collection_links_CRVgkT",
-    "section_WrkDNh",
+    "section_q6X993",
     "section_bmLpzB",
     "section_CYdbPm",
     "slideshow_cRC9zy"
