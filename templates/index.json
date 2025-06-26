@@ -1035,7 +1035,7 @@
                 "text_wefmdr": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Eco-Conscious Kitchenware</p>",
+                    "text": "<p>Eco Kitchenware</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1060,7 +1060,7 @@
                 "text_hMh6MG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sustainable materials & low-waste designs</p>",
+                    "text": "<p>Low-waste, reusable design</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1183,7 +1183,7 @@
                 "text_gh7dKt": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Smart Storage Solutions</p>",
+                    "text": "<p>Smart Storage</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1208,7 +1208,7 @@
                 "text_Gk3bQ7": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Designed to keep food fresh and organized</p>",
+                    "text": "<p>Keeps food fresh longer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1331,7 +1331,7 @@
                 "text_dibbxX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Brew Better, Live Better</p>",
+                    "text": "<p>Brew Better</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1356,7 +1356,7 @@
                 "text_NmJR9C": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Quality tools for your perfect daily coffee</p>",
+                    "text": "<p>Tools for daily coffee</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1404,7 +1404,7 @@
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
             "width": "custom",
-            "custom_width": 45,
+            "custom_width": 30,
             "width_mobile": "custom",
             "custom_width_mobile": 49,
             "height": "fit",
@@ -1479,7 +1479,7 @@
                 "text_pVJYXU": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Clean Prep, Less Mess</p>",
+                    "text": "<p>Easy Prep</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1504,7 +1504,7 @@
                 "text_4UnVHL": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Easy-to-use boards and dispensers that simplify cooking</p>",
+                    "text": "<p>No mess, quick clean</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1552,7 +1552,7 @@
             "vertical_alignment_flex_direction_column": "center",
             "gap": 16,
             "width": "custom",
-            "custom_width": 45,
+            "custom_width": 30,
             "width_mobile": "custom",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -1627,7 +1627,7 @@
                 "text_PUDAze": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Everyday Comfort, Thoughtfully Built</p>",
+                    "text": "<p>Cool Comfort</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1652,7 +1652,7 @@
                 "text_zigwHM": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Sleek fans & tools that elevate daily routines</p>",
+                    "text": "<p>Sleek fans, quiet power</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
