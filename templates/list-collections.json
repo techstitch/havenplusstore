@@ -157,7 +157,7 @@
       "settings": {
         "collection_list": [],
         "layout_type": "bento",
-        "carousel_on_mobile": true,
+        "carousel_on_mobile": false,
         "columns": 4,
         "mobile_columns": "2",
         "columns_gap": 1,
