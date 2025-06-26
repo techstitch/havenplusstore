@@ -1135,7 +1135,7 @@
             "icon_FzBWGE": {
               "type": "icon",
               "settings": {
-                "icon": "plant",
+                "icon": "box",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1283,7 +1283,7 @@
             "icon_CPePgp": {
               "type": "icon",
               "settings": {
-                "icon": "plant",
+                "icon": "bottle",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1431,7 +1431,7 @@
             "icon_qffPfL": {
               "type": "icon",
               "settings": {
-                "icon": "recycle",
+                "icon": "stopwatch",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1579,7 +1579,7 @@
             "icon_PPtMMK": {
               "type": "icon",
               "settings": {
-                "icon": "stopwatch",
+                "icon": "snowflake",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
