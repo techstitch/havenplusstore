@@ -157,11 +157,11 @@
       "settings": {
         "collection_list": [],
         "layout_type": "bento",
-        "carousel_on_mobile": false,
+        "carousel_on_mobile": true,
         "columns": 4,
         "mobile_columns": "2",
         "columns_gap": 1,
-        "bento_gap": 8,
+        "bento_gap": 15,
         "rows_gap": 1,
         "max_collections": 4,
         "icons_style": "chevron_large",
@@ -170,7 +170,7 @@
         "gap": 40,
         "color_scheme": "",
         "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-end": 20
       }
     }
   },
