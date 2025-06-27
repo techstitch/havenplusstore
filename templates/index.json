@@ -503,6 +503,7 @@
         "button_d6qkQE": {
           "type": "button",
           "name": "t:names.button",
+          "disabled": true,
           "settings": {
             "label": "View More",
             "link": "{{ closest.collection.url }}",
