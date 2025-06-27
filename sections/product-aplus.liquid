@@ -1,47 +1,56 @@
-<div class="page-width product_a_plus_container">
-  {% if product.metafields.content.show_a_plus != false and product.metafields.content.a_plus.value != blank %}
-    {% for image in product.metafields.content.a_plus.value %}
-      {% assign is_wide = false %}
-      {% if image.width > image.height %}
-        {% assign is_wide = true %}
-      {% endif %}
-      <img
-        src="{{ image | img_url: '1024x1024' }}"
-        alt="{{ image.alt | escape }}"
-        class="{% if is_wide %}wide{% endif %}"
-      >
-    {% endfor %}
-  {% endif %}
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<div class="page-width">
+  <div
+    class="product_a_plus_container"
+    data-masonry='{"itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "percentPosition": true }'
+  >
+    <div class="grid-sizer"></div>
+    {% if product.metafields.content.show_a_plus != false and product.metafields.content.a_plus.value != blank %}
+      {% for image in product.metafields.content.a_plus.value %}
+        <div class="grid-item">
+          <img src="{{ image | img_url: '1024x1024' }}" alt="{{ image.alt | escape }}">
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
 </div>
 
 <style>
   .product_a_plus_container {
-    column-count: 2;
-    column-gap: 20px;
-    width: var(--page-width);
+    display: block;
     margin: 0 auto 52px;
+    position: relative;
   }
 
-  .product_a_plus_container img {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+    float: left;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .grid-item img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
-    break-inside: avoid;
     border-radius: 6px;
     display: block;
   }
 
-  /* Horizontal images span full width */
-  .product_a_plus_container img.wide {
-    width: 66%;
-    display: block;
-    column-span: all; /* This has no effect in column layout */
-    margin-bottom: 24px;
+  @media (max-width: 768px) {
+    .grid-sizer,
+    .grid-item {
+      width: 50%;
+    }
   }
 
-  @media (min-width: 768px) {
-    .product_a_plus_container {
-      column-count: 3;
+  @media (max-width: 480px) {
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
     }
   }
 </style>
