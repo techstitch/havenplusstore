@@ -1,7 +1,7 @@
 <div class="product_a_plus_container">
   {% if product.metafields.content.show_a_plus != false %}
-    {% for image in product.metafields.content.a_plus.content %}
-      <img src="{{ image | img_url: 'large' }}" alt="{{ image.alt | escape }}">
+    {% for image in product.metafields.content.a_plus %}
+      <img src="{{ image.content | img_url: 'large' }}" alt="{{ image.alt | escape }}">
     {% endfor %}
   {% endif %}
 </div>
