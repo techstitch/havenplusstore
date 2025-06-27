@@ -503,6 +503,7 @@
         "button_d6qkQE": {
           "type": "button",
           "name": "t:names.button",
+          "disabled": true,
           "settings": {
             "label": "View More",
             "link": "{{ closest.collection.url }}",
@@ -925,7 +926,7 @@
       ],
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "all-products",
+        "collection": "best-sellers",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 16,
@@ -2774,7 +2775,7 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "all-products",
+        "collection": "new-arrivals",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 16,
