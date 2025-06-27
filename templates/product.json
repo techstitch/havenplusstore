@@ -1576,7 +1576,9 @@
           ]
         }
       },
-      "custom_css": [],
+      "custom_css": [
+        "@media(max-width:756px){.group-block-content{padding-bottom: 0 !important; padding-right: 0 !important; }}"
+      ],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "right",
