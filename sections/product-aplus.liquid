@@ -1,0 +1,17 @@
+<div class="product_a_plus_container">
+  {% for image in product.metafields.content.a_plus %}
+    <img src="{{ image | img_url: 'large' }}" alt="{{ image.alt | escape }}">
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Product A Plus",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Product A Plus"
+    }
+  ]
+}
+{% endschema %}
