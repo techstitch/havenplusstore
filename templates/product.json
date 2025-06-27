@@ -1588,6 +1588,11 @@
         "padding-block-end": 52
       }
     },
+    "product_aplus_Na3VzP": {
+      "type": "product-aplus",
+      "name": "Product A Plus",
+      "settings": {}
+    },
     "product_recommendations_wRrFmV": {
       "type": "product-recommendations",
       "blocks": {
@@ -1860,11 +1865,6 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
-    },
-    "product_aplus_Na3VzP": {
-      "type": "product-aplus",
-      "name": "Product A Plus",
-      "settings": {}
     }
   },
   "order": [
@@ -1872,8 +1872,8 @@
     "section_Mpa39M",
     "marquee_mUqeqP",
     "media_with_content_J9KjF7",
+    "product_aplus_Na3VzP",
     "product_recommendations_wRrFmV",
-    "17505820347a0b6b55",
-    "product_aplus_Na3VzP"
+    "17505820347a0b6b55"
   ]
 }
