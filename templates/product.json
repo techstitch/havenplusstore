@@ -1860,6 +1860,11 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "product_aplus_Na3VzP": {
+      "type": "product-aplus",
+      "name": "Product A Plus",
+      "settings": {}
     }
   },
   "order": [
@@ -1868,6 +1873,7 @@
     "marquee_mUqeqP",
     "media_with_content_J9KjF7",
     "product_recommendations_wRrFmV",
-    "17505820347a0b6b55"
+    "17505820347a0b6b55",
+    "product_aplus_Na3VzP"
   ]
 }
