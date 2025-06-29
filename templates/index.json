@@ -1953,13 +1953,13 @@
         "padding-block-end": 52
       }
     },
-    "marquee_tyVAYA": {
+    "marquee_mVJDAb": {
       "type": "marquee",
       "blocks": {
-        "text_iix8nP": {
+        "text_jGGVX4": {
           "type": "text",
           "settings": {
-            "text": "<p>Freshness</p>",
+            "text": "<p>Thoughtfully Designed</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -1981,7 +1981,7 @@
           },
           "blocks": {}
         },
-        "icon_7VgEk9": {
+        "icon_mqTUHt": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -1992,10 +1992,10 @@
           },
           "blocks": {}
         },
-        "text_mTbx4Y": {
+        "text_4zhkGi": {
           "type": "text",
           "settings": {
-            "text": "<p>Elegance</p>",
+            "text": "<p>Made for Modern Living</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2017,7 +2017,7 @@
           },
           "blocks": {}
         },
-        "icon_YpPeYW": {
+        "icon_FECcfX": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2028,10 +2028,10 @@
           },
           "blocks": {}
         },
-        "text_LqTmDN": {
+        "text_Pmnjgx": {
           "type": "text",
           "settings": {
-            "text": "<p>Durability </p>",
+            "text": "<p>Everyday Elevated</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2053,7 +2053,7 @@
           },
           "blocks": {}
         },
-        "icon_AHNHPB": {
+        "icon_pciC9x": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2064,10 +2064,10 @@
           },
           "blocks": {}
         },
-        "text_6LMmhh": {
+        "text_PnGKy3": {
           "type": "text",
           "settings": {
-            "text": "<p>Airtight </p>",
+            "text": "<p>Built to Last</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2089,7 +2089,7 @@
           },
           "blocks": {}
         },
-        "icon_FB6d9g": {
+        "icon_MhFWYy": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2100,10 +2100,10 @@
           },
           "blocks": {}
         },
-        "text_3jLcdT": {
+        "text_CdmB4p": {
           "type": "text",
           "settings": {
-            "text": "<p>Eco-Friendly</p>",
+            "text": "<p>Effortless Functionality</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2125,7 +2125,7 @@
           },
           "blocks": {}
         },
-        "icon_tChDMK": {
+        "icon_RRn94n": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2136,10 +2136,10 @@
           },
           "blocks": {}
         },
-        "text_7aaH3f": {
+        "text_P37dGB": {
           "type": "text",
           "settings": {
-            "text": "<p>Leak-Proof</p>",
+            "text": "<p>Timeless Aesthetics</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2161,7 +2161,7 @@
           },
           "blocks": {}
         },
-        "icon_6yqt9T": {
+        "icon_36Yrae": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2172,10 +2172,10 @@
           },
           "blocks": {}
         },
-        "text_iQP4xi": {
+        "text_7ixybD": {
           "type": "text",
           "settings": {
-            "text": "<p>Minimal </p>",
+            "text": "<p>Sustainable by Nature</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2197,7 +2197,7 @@
           },
           "blocks": {}
         },
-        "icon_MAYVKF": {
+        "icon_HQ3Mia": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2208,10 +2208,10 @@
           },
           "blocks": {}
         },
-        "text_nzH86d": {
+        "text_YJqLm3": {
           "type": "text",
           "settings": {
-            "text": "<p>Reliable </p>",
+            "text": "<p>Crafted for Comfort</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2233,43 +2233,7 @@
           },
           "blocks": {}
         },
-        "icon_JEpdXC": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "arrow",
-            "width": 22,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "text_M994a9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sustainable </p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "icon_6ftper": {
+        "icon_PTTdMi": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2282,24 +2246,22 @@
         }
       },
       "block_order": [
-        "text_iix8nP",
-        "icon_7VgEk9",
-        "text_mTbx4Y",
-        "icon_YpPeYW",
-        "text_LqTmDN",
-        "icon_AHNHPB",
-        "text_6LMmhh",
-        "icon_FB6d9g",
-        "text_3jLcdT",
-        "icon_tChDMK",
-        "text_7aaH3f",
-        "icon_6yqt9T",
-        "text_iQP4xi",
-        "icon_MAYVKF",
-        "text_nzH86d",
-        "icon_JEpdXC",
-        "text_M994a9",
-        "icon_6ftper"
+        "text_jGGVX4",
+        "icon_mqTUHt",
+        "text_4zhkGi",
+        "icon_FECcfX",
+        "text_Pmnjgx",
+        "icon_pciC9x",
+        "text_PnGKy3",
+        "icon_MhFWYy",
+        "text_CdmB4p",
+        "icon_RRn94n",
+        "text_P37dGB",
+        "icon_36Yrae",
+        "text_7ixybD",
+        "icon_HQ3Mia",
+        "text_YJqLm3",
+        "icon_PTTdMi"
       ],
       "name": "t:names.marquee_section",
       "settings": {
@@ -2755,13 +2717,13 @@
         "padding-block-end": 52
       }
     },
-    "marquee_cbPQXb": {
+    "marquee_WYQtA3": {
       "type": "marquee",
       "blocks": {
-        "text_TxXPFN": {
+        "text_A4LyEx": {
           "type": "text",
           "settings": {
-            "text": "<p>Freshness</p>",
+            "text": "<p>Thoughtfully Designed</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2783,7 +2745,7 @@
           },
           "blocks": {}
         },
-        "icon_zdRGJm": {
+        "icon_FWnKQ8": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2794,10 +2756,10 @@
           },
           "blocks": {}
         },
-        "text_hemPHa": {
+        "text_33yJtd": {
           "type": "text",
           "settings": {
-            "text": "<p>Elegance</p>",
+            "text": "<p>Made for Modern Living</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2819,7 +2781,7 @@
           },
           "blocks": {}
         },
-        "icon_VdXLUR": {
+        "icon_WCzRqm": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2830,10 +2792,10 @@
           },
           "blocks": {}
         },
-        "text_eicX9C": {
+        "text_gDPQpx": {
           "type": "text",
           "settings": {
-            "text": "<p>Durability </p>",
+            "text": "<p>Everyday Elevated</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2855,7 +2817,7 @@
           },
           "blocks": {}
         },
-        "icon_HwLHmP": {
+        "icon_yLhAfk": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2866,10 +2828,10 @@
           },
           "blocks": {}
         },
-        "text_xQqPdn": {
+        "text_wYUdKp": {
           "type": "text",
           "settings": {
-            "text": "<p>Airtight </p>",
+            "text": "<p>Built to Last</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2891,7 +2853,7 @@
           },
           "blocks": {}
         },
-        "icon_NVcx8t": {
+        "icon_K7My7L": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2902,10 +2864,10 @@
           },
           "blocks": {}
         },
-        "text_GgUFDV": {
+        "text_VnxTrb": {
           "type": "text",
           "settings": {
-            "text": "<p>Eco-Friendly</p>",
+            "text": "<p>Effortless Functionality</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2927,7 +2889,7 @@
           },
           "blocks": {}
         },
-        "icon_WL9fmh": {
+        "icon_qPNwgQ": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2938,10 +2900,10 @@
           },
           "blocks": {}
         },
-        "text_pXewGb": {
+        "text_Rak8P7": {
           "type": "text",
           "settings": {
-            "text": "<p>Leak-Proof</p>",
+            "text": "<p>Timeless Aesthetics</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2963,7 +2925,7 @@
           },
           "blocks": {}
         },
-        "icon_HHD6mx": {
+        "icon_xwHDdM": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -2974,10 +2936,10 @@
           },
           "blocks": {}
         },
-        "text_kCMmK3": {
+        "text_rR78jg": {
           "type": "text",
           "settings": {
-            "text": "<p>Minimal </p>",
+            "text": "<p>Sustainable by Nature</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -2999,7 +2961,7 @@
           },
           "blocks": {}
         },
-        "icon_TVc97G": {
+        "icon_6eWCct": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -3010,10 +2972,10 @@
           },
           "blocks": {}
         },
-        "text_QdNC8i": {
+        "text_pPyXiY": {
           "type": "text",
           "settings": {
-            "text": "<p>Reliable </p>",
+            "text": "<p>Crafted for Comfort</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -3035,43 +2997,7 @@
           },
           "blocks": {}
         },
-        "icon_CrgerK": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "arrow",
-            "width": 22,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "text_NNDXCb": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sustainable </p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "icon_WV3QdM": {
+        "icon_wATEap": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -3084,24 +3010,22 @@
         }
       },
       "block_order": [
-        "text_TxXPFN",
-        "icon_zdRGJm",
-        "text_hemPHa",
-        "icon_VdXLUR",
-        "text_eicX9C",
-        "icon_HwLHmP",
-        "text_xQqPdn",
-        "icon_NVcx8t",
-        "text_GgUFDV",
-        "icon_WL9fmh",
-        "text_pXewGb",
-        "icon_HHD6mx",
-        "text_kCMmK3",
-        "icon_TVc97G",
-        "text_QdNC8i",
-        "icon_CrgerK",
-        "text_NNDXCb",
-        "icon_WV3QdM"
+        "text_A4LyEx",
+        "icon_FWnKQ8",
+        "text_33yJtd",
+        "icon_WCzRqm",
+        "text_gDPQpx",
+        "icon_yLhAfk",
+        "text_wYUdKp",
+        "icon_K7My7L",
+        "text_VnxTrb",
+        "icon_qPNwgQ",
+        "text_Rak8P7",
+        "icon_xwHDdM",
+        "text_rR78jg",
+        "icon_6eWCct",
+        "text_pPyXiY",
+        "icon_wATEap"
       ],
       "name": "t:names.marquee_section",
       "settings": {
@@ -3396,9 +3320,9 @@
     "section_JFwfAR",
     "section_RhpYRt",
     "section_UdHEP3",
-    "marquee_tyVAYA",
+    "marquee_mVJDAb",
     "product_list_X8Q7bi",
-    "marquee_cbPQXb",
+    "marquee_WYQtA3",
     "section_Pr7E4d"
   ]
 }
