@@ -1891,6 +1891,320 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "section_E8G6Kn": {
+      "type": "section",
+      "blocks": {
+        "text_fDdLc3": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3>Frequently asked questions</h3>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_rxH4wP": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "type_preset": "h6",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_EJDpyq": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Is HavenPlus a trusted brand?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_qxbCTd": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. HavenPlus is known for combining quality, durability, and thoughtful design in home and kitchen essentials. Thousands of customers trust us for reliable, everyday products that perform well and look great.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_qxbCTd"
+              ]
+            },
+            "accordion_row_QUXUj9": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Are your products made from safe materials?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_6LGTie": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Absolutely. All HavenPlus products use food-grade, BPA-free, and non-toxic materials. Safety and quality are non-negotiable in everything we make.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_6LGTie"
+              ]
+            },
+            "accordion_row_6C8G6h": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What if I receive a damaged or faulty product?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_pfVxa3": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>In the rare case that happens, just reach out to our customer support within 7 days of delivery. We'll replace or resolve the issue as quickly as possible.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_pfVxa3"
+              ]
+            },
+            "accordion_row_4UMUBR": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I contact HavenPlus support?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_yC3G7M": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>You can reach us anytime, details are available on our Contact page. We usually respond within 24 hours.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_yC3G7M"
+              ]
+            },
+            "accordion_row_tFHnGE": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Are HavenPlus products eco-friendly?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_9fQP4X": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Many of our products are designed with sustainability in mind—using reusable materials like stainless steel, glass, and recyclable packaging to reduce waste.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_9fQP4X"
+              ]
+            },
+            "accordion_row_37ieXW": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What makes HavenPlus different from other home brands?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_i3eyXw": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We focus on combining form and function. Our products are not only built to last—they’re designed to fit modern lifestyles, save space, and add value to your everyday routine.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_i3eyXw"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_EJDpyq",
+            "accordion_row_QUXUj9",
+            "accordion_row_6C8G6h",
+            "accordion_row_4UMUBR",
+            "accordion_row_tFHnGE",
+            "accordion_row_37ieXW"
+          ]
+        }
+      },
+      "block_order": [
+        "text_fDdLc3",
+        "accordion_rxH4wP"
+      ],
+      "name": "t:names.faq_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 52,
+        "padding-block-end": 52
+      }
     }
   },
   "order": [
@@ -1902,6 +2216,7 @@
     "collection_links_CRVgkT",
     "section_q6X993",
     "section_CYdbPm",
-    "slideshow_cRC9zy"
+    "slideshow_cRC9zy",
+    "section_E8G6Kn"
   ]
 }

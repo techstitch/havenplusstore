@@ -87,7 +87,7 @@
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
         "toggle_overlay": true,
-        "overlay_color": "#000000bb",
+        "overlay_color": "#000000ba",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": true,
@@ -260,10 +260,10 @@
         "padding-block-end": 0
       }
     },
-    "section_j8qcrr": {
+    "section_A4HUbn": {
       "type": "section",
       "blocks": {
-        "text_KMBEah": {
+        "text_L7LHQi": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
@@ -289,7 +289,7 @@
           },
           "blocks": {}
         },
-        "accordion_r3WFTE": {
+        "accordion_WLCri9": {
           "type": "accordion",
           "name": "t:names.accordion",
           "settings": {
@@ -308,17 +308,17 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "accordion_row_UphWkG": {
+            "accordion_row_4Xn84L": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What makes Havenplus containers different from regular containers?",
+                "heading": "Is HavenPlus a trusted brand?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_9MAhFD": {
+                "text_4zhH9T": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our containers feature vacuum-sealed, airtight technology that locks in freshness, preserves nutrients, and prevents leaks — all wrapped in durable, elegant glass design.</p>",
+                    "text": "<p>Yes. HavenPlus is known for combining quality, durability, and thoughtful design in home and kitchen essentials. Thousands of customers trust us for reliable, everyday products that perform well and look great.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -342,20 +342,20 @@
                 }
               },
               "block_order": [
-                "text_9MAhFD"
+                "text_4zhH9T"
               ]
             },
-            "accordion_row_6QJ8nQ": {
+            "accordion_row_PiFycL": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are the containers microwave and dishwasher safe?",
+                "heading": "Are your products made from safe materials?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_9Tjhie": {
+                "text_WKcmin": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Yes! All our glass containers are microwave, dishwasher, and freezer safe. Just remove any non-glass lids before heating.</p>",
+                    "text": "<p>Absolutely. All HavenPlus products use food-grade, BPA-free, and non-toxic materials. Safety and quality are non-negotiable in everything we make.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -379,20 +379,20 @@
                 }
               },
               "block_order": [
-                "text_9Tjhie"
+                "text_WKcmin"
               ]
             },
-            "accordion_row_CL9BVw": {
+            "accordion_row_CMehXK": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Can I use these containers for carrying lunch or liquids?",
+                "heading": "What if I receive a damaged or faulty product?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_3Xm8Uh": {
+                "text_bzQnFU": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Absolutely. Our containers are 100% leak-proof, making them perfect for on-the-go meals, including soups, curries, and salads.</p>",
+                    "text": "<p>In the rare case that happens, just reach out to our customer support within 7 days of delivery. We'll replace or resolve the issue as quickly as possible.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -416,20 +416,20 @@
                 }
               },
               "block_order": [
-                "text_3Xm8Uh"
+                "text_bzQnFU"
               ]
             },
-            "accordion_row_zN8Lb9": {
+            "accordion_row_ejXm8p": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What materials are used in Havenplus products?",
+                "heading": "How do I contact HavenPlus support?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_6iYypY": {
+                "text_e3htNH": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We use high-quality, BPA-free borosilicate glass and food-safe silicone components to ensure safety, durability, and eco-friendliness.</p>",
+                    "text": "<p>You can reach us anytime, details are available on our Contact page. We usually respond within 24 hours.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -453,20 +453,20 @@
                 }
               },
               "block_order": [
-                "text_6iYypY"
+                "text_e3htNH"
               ]
             },
-            "accordion_row_FF63r6": {
+            "accordion_row_AbiXX9": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How do I activate the vacuum seal feature?",
+                "heading": "Are HavenPlus products eco-friendly?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_zfLmNw": {
+                "text_FDxbEJ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our automatic vacuum-sealing mechanism activates as you close the lid. You’ll hear a soft click or feel the air release — that’s freshness being locked in.</p>",
+                    "text": "<p>Many of our products are designed with sustainability in mind—using reusable materials like stainless steel, glass, and recyclable packaging to reduce waste.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -490,22 +490,60 @@
                 }
               },
               "block_order": [
-                "text_zfLmNw"
+                "text_FDxbEJ"
+              ]
+            },
+            "accordion_row_Ldw3De": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What makes HavenPlus different from other home brands?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_Lp96WG": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We focus on combining form and function. Our products are not only built to last—they’re designed to fit modern lifestyles, save space, and add value to your everyday routine.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_Lp96WG"
               ]
             }
           },
           "block_order": [
-            "accordion_row_UphWkG",
-            "accordion_row_6QJ8nQ",
-            "accordion_row_CL9BVw",
-            "accordion_row_zN8Lb9",
-            "accordion_row_FF63r6"
+            "accordion_row_4Xn84L",
+            "accordion_row_PiFycL",
+            "accordion_row_CMehXK",
+            "accordion_row_ejXm8p",
+            "accordion_row_AbiXX9",
+            "accordion_row_Ldw3De"
           ]
         }
       },
       "block_order": [
-        "text_KMBEah",
-        "accordion_r3WFTE"
+        "text_L7LHQi",
+        "accordion_WLCri9"
       ],
       "name": "t:names.faq_section",
       "settings": {
@@ -540,6 +578,6 @@
   "order": [
     "hero_3rpizY",
     "section",
-    "section_j8qcrr"
+    "section_A4HUbn"
   ]
 }
