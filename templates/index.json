@@ -25,9 +25,9 @@
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "custom",
+            "width": "fill",
             "custom_width": 34,
-            "width_mobile": "custom",
+            "width_mobile": "fill",
             "custom_width_mobile": 53,
             "height": "fit",
             "custom_height": 100,
@@ -53,7 +53,7 @@
             "text_KxeJ6r": {
               "type": "text",
               "settings": {
-                "text": "<p>Savor every. last. bite. </p>",
+                "text": "<p>Smarter Choices for Better Living</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -78,7 +78,7 @@
             "text_AUhPwt": {
               "type": "text",
               "settings": {
-                "text": "<p><em>Modern essentials made for better kitchens, better mornings, and better living.</em></p>",
+                "text": "<p>Durable, reusable, and designed to do more with less.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -107,9 +107,9 @@
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button",
-                "width": "custom",
+                "width": "fit-content",
                 "custom_width": 40,
-                "width_mobile": "custom",
+                "width_mobile": "fit-content",
                 "custom_width_mobile": 69
               },
               "blocks": {}
