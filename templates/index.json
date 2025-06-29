@@ -242,7 +242,7 @@
         "text_NxnXrP": {
           "type": "text",
           "settings": {
-            "text": "<p>Airtight </p>",
+            "text": "<p>Built to Last</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -278,7 +278,7 @@
         "text_aiGffP": {
           "type": "text",
           "settings": {
-            "text": "<p>Eco-Friendly</p>",
+            "text": "<p>Effortless Functionality</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -314,7 +314,7 @@
         "text_47JebL": {
           "type": "text",
           "settings": {
-            "text": "<p>Leak-Proof</p>",
+            "text": "<p>Timeless Aesthetics</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -350,7 +350,7 @@
         "text_7wDmct": {
           "type": "text",
           "settings": {
-            "text": "<p>Minimal </p>",
+            "text": "<p>Sustainable by Nature</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -386,7 +386,7 @@
         "text_QD96Dj": {
           "type": "text",
           "settings": {
-            "text": "<p>Reliable </p>",
+            "text": "<p>Crafted for Comfort</p>",
             "width": "fit-content",
             "max_width": "none",
             "alignment": "left",
@@ -418,42 +418,6 @@
             "open_in_new_tab": false
           },
           "blocks": {}
-        },
-        "text_FaQqVw": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sustainable </p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "icon_dLTJH7": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "arrow",
-            "width": 22,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
         }
       },
       "block_order": [
@@ -472,9 +436,7 @@
         "text_7wDmct",
         "icon_c9x8X3",
         "text_QD96Dj",
-        "icon_k34tFW",
-        "text_FaQqVw",
-        "icon_dLTJH7"
+        "icon_k34tFW"
       ],
       "name": "t:names.marquee_section",
       "settings": {
