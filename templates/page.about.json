@@ -161,6 +161,83 @@
         "padding-block-end": 40
       }
     },
+    "section_mW9Kf8": {
+      "type": "section",
+      "blocks": {
+        "text_p4igCb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HavenPlus is a proud initiative by <strong>Niche Marketing Management</strong>, a company trusted for over 22 years. Building on this strong legacy, HavenPlus offers a smooth and reliable online shopping experience focused on innovative electronics and contemporary kitchen essentials.</p><p>We’re committed to bringing you the latest in technology and home solutions—at competitive prices—with service you can count on. With the expertise of Niche Marketing Management behind us, HavenPlus is founded on trust, innovation, and a passion for customer satisfaction—making your everyday shopping smarter, simpler, and more rewarding.</p><p></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_DUfKPB": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "link",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_p4igCb",
+        "button_DUfKPB"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
     "section_bmLpzB": {
       "type": "section",
       "blocks": {
@@ -2172,6 +2249,7 @@
   "order": [
     "main",
     "hero_6QKriH",
+    "section_mW9Kf8",
     "section_bmLpzB",
     "marquee_RXKaYC",
     "section_Bxde9f",
