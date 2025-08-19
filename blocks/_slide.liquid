@@ -1,10 +1,9 @@
-
-
 {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
 
 {% capture children %}
   {% liquid
     assign preview_image = block.settings.image_1
+    assign mobile_image = block.settings.mobile_image_1
     if block.settings.media_type_1 == 'video'
       assign preview_image = block.settings.video_1.preview_image
     endif
@@ -41,14 +40,28 @@
           {{
             block.settings.image_1
             | image_url: width: 3840
-            | image_tag: height: height, sizes: sizes, widths: widths, loading: 'eager', class: 'slide__image'
+            | image_tag: height: height, sizes: sizes, widths: widths, loading: 'eager', class: 'slide__image slide__image--desktop'
           }}
+          {%- if mobile_image != blank -%}
+            {{
+              mobile_image
+              | image_url: width: 3840
+              | image_tag: height: height, sizes: sizes, widths: widths, loading: 'eager', class: 'slide__image slide__image--mobile'
+            }}
+          {%- endif -%}
         {%- else -%}
           {{
             block.settings.image_1
             | image_url: width: 3840
-            | image_tag: height: height, widths: widths, loading: 'lazy', class: 'slide__image', sizes: lazy_sizes
+            | image_tag: height: height, widths: widths, loading: 'lazy', class: 'slide__image slide__image--desktop', sizes: lazy_sizes
           }}
+          {%- if mobile_image != blank -%}
+            {{
+              mobile_image
+              | image_url: width: 3840
+              | image_tag: height: height, widths: widths, loading: 'lazy', class: 'slide__image slide__image--mobile', sizes: lazy_sizes
+            }}
+          {%- endif -%}
         {%- endif -%}
       {%- else -%}
         {{
@@ -125,6 +138,25 @@
     object-fit: cover;
     object-position: center center;
   }
+
+  /* Mobile image display logic */
+  .slide__image--mobile {
+    display: none;
+  }
+
+  .slide__image--desktop {
+    display: block;
+  }
+
+  @media (max-width: 756px) {
+    .slide__image--mobile {
+      display: block;
+    }
+    
+    .slide__image--desktop {
+      display: none;
+    }
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -160,6 +192,13 @@
       "type": "image_picker",
       "id": "image_1",
       "label": "t:settings.image",
+      "visible_if": "{{ block.settings.media_type_1 == 'image' }}"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image_1",
+      "label": "t:settings.mobile_image",
+      "info": "t:settings.mobile_image_info",
       "visible_if": "{{ block.settings.media_type_1 == 'image' }}"
     },
     {
