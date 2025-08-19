@@ -125,6 +125,7 @@
       "block_order": [
         "group_3cB4GW"
       ],
+      "disabled": true,
       "settings": {
         "link": "shopify://collections/all",
         "open_in_new_tab": false,
