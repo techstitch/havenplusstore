@@ -11,6 +11,36 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "header_announcements_XTfrJe": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_KBNEtM": {
+          "type": "_announcement",
+          "settings": {
+            "text": "<strong>10% OFF + Free Delivery on First Order</strong>",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_KBNEtM"
+      ],
+      "name": "t:names.announcement_bar",
+      "settings": {
+        "speed": 5,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "divider_width": 0,
+        "padding-block-start": 15,
+        "padding-block-end": 15
+      }
+    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -88,6 +118,7 @@
     }
   },
   "order": [
+    "header_announcements_XTfrJe",
     "header_section"
   ]
 }
