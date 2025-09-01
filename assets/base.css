@@ -3094,14 +3094,7 @@ slideshow-slides {
     }
   }
 }
-.template-product #more-payment-options-link {
-  width: 100% !important;
-  background: #365d60 !important;
-  color: #fff !important; 
-  padding-block: var(--padding-lg);
-  padding-inline: var(--padding-4xl);
-  min-height: var(--minimum-touch-target);
-}
+
 
 slideshow-component[disabled='true'] slideshow-slides {
   overflow: hidden;
