@@ -214,6 +214,44 @@
               },
               "block_order": []
             },
+            "divider_ppHQRV": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "text_6PtBQF": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>Delivery within 1–3 days across the UAE</strong></p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "image_GqQcpA": {
               "type": "image",
               "name": "t:names.image",
@@ -246,6 +284,8 @@
             "text_gXMUag",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "divider_ppHQRV",
+            "text_6PtBQF",
             "image_GqQcpA"
           ]
         }
