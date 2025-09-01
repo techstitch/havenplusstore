@@ -3095,7 +3095,9 @@ slideshow-slides {
   }
 }
 #more-payment-options-link{
-  display: none !important; 
+  width: 100% !important;
+  background: #365d60 !important;
+  color: #fff !important; 
 }
 slideshow-component[disabled='true'] slideshow-slides {
   overflow: hidden;
