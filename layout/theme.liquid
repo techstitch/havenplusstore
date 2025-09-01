@@ -54,6 +54,18 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <div id="header-group">
       {% sections 'header-group' %}
     </div>
+{% if template contains 'product' %}
+  <style>
+    #more-payment-options-link {
+      width: 100% !important;
+      background: #365d60 !important;
+      color: #fff !important; 
+      padding-block: var(--padding-lg);
+      padding-inline: var(--padding-4xl);
+      min-height: var(--minimum-touch-target);
+    }
+  </style>
+{% endif %}
 
     <main
       id="MainContent"
