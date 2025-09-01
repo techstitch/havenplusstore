@@ -3094,6 +3094,9 @@ slideshow-slides {
     }
   }
 }
+.wallet-button-wrapper [slot="more-options"] {
+  display: none !important;
+}
 
 slideshow-component[disabled='true'] slideshow-slides {
   overflow: hidden;
