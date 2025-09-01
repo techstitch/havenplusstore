@@ -17,7 +17,7 @@
         "announcement_KBNEtM": {
           "type": "_announcement",
           "settings": {
-            "text": "<strong>10% OFF + Free Delivery on First Order</strong>",
+            "text": "<strong>10% OFF + Free Delivery (Use Code: NEW10)</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
