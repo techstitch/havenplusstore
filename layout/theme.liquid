@@ -46,27 +46,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 }(window, document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    function hideWalletMoreOptions() {
-      document.querySelectorAll(".wallet-button-wrapper").forEach(host => {
-        if (host.shadowRoot) {
-          const moreOptions = host.shadowRoot.querySelector('[slot="more-options"]');
-          if (moreOptions) {
-            moreOptions.style.display = "none";
-          }
-        }
-      });
-    }
-
-    // Run once on load
-    hideWalletMoreOptions();
-
-    // Watch for dynamically injected wallet buttons
-    const observer = new MutationObserver(hideWalletMoreOptions);
-    observer.observe(document.body, { childList: true, subtree: true });
-  });
-</script>
 
   </head>
 
