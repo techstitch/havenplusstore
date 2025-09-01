@@ -230,7 +230,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p><strong>Delivery within 1–3 days across the UAE</strong></p>",
+                "text": "<p><strong>Get Free Delivery Within 1–3 Days</strong></p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -256,7 +256,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/icon.png",
+                "image": "shopify://shop_images/icon_1.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
