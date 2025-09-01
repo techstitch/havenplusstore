@@ -17,13 +17,13 @@
         "announcement_KBNEtM": {
           "type": "_announcement",
           "settings": {
-            "text": "<strong>10% OFF + Free Delivery (Use Code: NEW10)</strong>",
+            "text": "<strong>Extra 10% OFF + Free Shipping (Use Code: NEW10)</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "weight": "",
             "letter_spacing": "normal",
-            "case": "none"
+            "case": "uppercase"
           },
           "blocks": {}
         }
