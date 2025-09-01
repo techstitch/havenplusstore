@@ -3094,7 +3094,9 @@ slideshow-slides {
     }
   }
 }
-
+#more-payment-options-link{
+  display: none !important; 
+}
 slideshow-component[disabled='true'] slideshow-slides {
   overflow: hidden;
 }
