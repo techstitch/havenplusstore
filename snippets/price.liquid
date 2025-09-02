@@ -30,24 +30,30 @@
 
 <div ref="priceContainer" class="price-wrapper">
   {% if show_sale_price_first == false and show_compare_price %}
-    <s class="compare-at-price">
-      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
-           alt="AED" class="currency-icon" />
-      {{ compare_at_price }}
+    <s class="compare-at-price price-item">
+      <span class="price-flex">
+        <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+             alt="AED" class="currency-icon" />
+        {{ compare_at_price }}
+      </span>
     </s>
   {% endif %}
 
-  <span class="price">
-    <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
-         alt="AED" class="currency-icon" />
-    {{ price | default: '&nbsp;' }}
+  <span class="price price-item">
+    <span class="price-flex">
+      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+           alt="AED" class="currency-icon" />
+      {{ price | default: '&nbsp;' }}
+    </span>
   </span>
 
   {% if show_sale_price_first == true and show_compare_price %}
-    <s class="compare-at-price">
-      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
-           alt="AED" class="currency-icon" />
-      {{ compare_at_price }}
+    <s class="compare-at-price price-item">
+      <span class="price-flex">
+        <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+             alt="AED" class="currency-icon" />
+        {{ compare_at_price }}
+      </span>
     </s>
   {% endif %}
 
@@ -55,10 +61,12 @@
     {%- liquid
       assign unit_price = selected_variant.unit_price | money_without_currency
     -%}
-    <div class="unit-price">
-      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
-           alt="AED" class="currency-icon" />
-      {{ unit_price }}
+    <div class="unit-price price-item">
+      <span class="price-flex">
+        <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+             alt="AED" class="currency-icon" />
+        {{ unit_price }}
+      </span>
       <span class="unit-price-separator">/</span>
       {{ selected_variant.unit_price_measurement.reference_value }}
       {{ selected_variant.unit_price_measurement.reference_unit }}
@@ -67,10 +75,30 @@
 </div>
 
 <style>
+.price-wrapper .price-item {
+  display: inline-block;
+}
+
+.price-flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* space between icon and number */
+}
+
 .price-wrapper .currency-icon {
   width: 14px;   /* adjust size if needed */
   height: auto;
-  margin-right: 4px;
   vertical-align: middle;
+}
+.price-wrapper{
+      display: flex
+;
+    flex-wrap: wrap;
+}
+.price, .compare-at-price, .unit-price
+ {
+    min-width: fit-content;
+    display: flex
+;
 }
 </style>
