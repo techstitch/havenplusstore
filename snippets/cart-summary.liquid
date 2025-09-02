@@ -8,8 +8,10 @@
     {%- if cart.cart_level_discount_applications.size > 0 -%}
       <span class="cart__summary-item cart__original-total">
         <span class="cart__original-total-label">{{ 'content.cart_subtotal' | t }}</span>
-        <span class="cart__original-total-value cart-secondary-typography">
-          {{- cart.original_total_price | money -}}
+        <span class="cart__original-total-value cart-secondary-typography price-flex">
+          <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609"
+               alt="AED" class="currency-icon" />
+          {{- cart.original_total_price | money_without_currency -}}
         </span>
       </span>
       <div class="cart__summary-discounts">
@@ -24,8 +26,10 @@
                 {{- 'icon-discount.svg' | inline_asset_content -}}
                 {{ discount.title | escape }}
               </span>
-              <span class="cart__discount-value cart-secondary-typography"
-                >-{{ discount.total_allocated_amount | money -}}
+              <span class="cart__discount-value cart-secondary-typography price-flex">
+                <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609"
+                     alt="AED" class="currency-icon" />
+                -{{ discount.total_allocated_amount | money_without_currency -}}
               </span>
             </li>
           {%- endfor -%}
@@ -47,11 +51,7 @@
   {% endif %}
 
   {%- liquid
-    if settings.currency_code_enabled_cart_total
-      assign total_price = cart.total_price | money_with_currency
-    else
-      assign total_price = cart.total_price | money
-    endif
+    assign total_price = cart.total_price | money_without_currency
   -%}
 
   <div class="cart__total-container">
@@ -63,10 +63,12 @@
       <text-component
         ref="cartTotal"
         value="{{ total_price | strip_html }}"
-        class="cart__total-value cart-secondary-typography"
+        class="cart__total-value cart-secondary-typography price-flex"
         {% comment %} Used by payment_terms web component {% endcomment %}
         data-cart-subtotal
       >
+        <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609"
+             alt="AED" class="currency-icon" />
         {{ total_price }}
       </text-component>
     </span>
@@ -122,5 +124,17 @@
 
   .cart__installments {
     color: var(--color-foreground);
+  }
+
+  /* Reuse price styles from product snippet */
+  .price-flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .currency-icon {
+    width: 15px !important;
+    height: 15px !important;
+    vertical-align: middle;
   }
 {% endstylesheet %}
