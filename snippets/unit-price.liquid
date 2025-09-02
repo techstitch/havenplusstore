@@ -7,18 +7,25 @@
   @example
   {% render 'unit-price', variant: variant, price: price %}
 {%- enddoc -%}
+
 <small class="unit-price">
   <span class="visually-hidden">{{ 'accessibility.unit_price' | t }}</span>
   {%- liquid
     assign measurement = variant.unit_price_measurement
     assign count = measurement.reference_value
+    assign unit_price_numeric = variant.unit_price | money_without_currency
   -%}
+
   {%- if measurement.measured_type == 'count' -%}
-    {%- if count == 1 -%}
-      {{- 'blocks.unit_price.per_item_single_html' | t: price: price -}}
-    {%- else -%}
-      {{- 'blocks.unit_price.per_item_html' | t: price: price, count: count -}}
-    {%- endif -%}
+    <span class="price-flex">
+      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609"
+           alt="AED" class="currency-icon" />
+      {%- if count == 1 -%}
+        {{- 'blocks.unit_price.per_item_single_html' | t: price: unit_price_numeric -}}
+      {%- else -%}
+        {{- 'blocks.unit_price.per_item_html' | t: price: unit_price_numeric, count: count -}}
+      {%- endif -%}
+    </span>
   {%- else -%}
     {%- liquid
       assign unit = measurement.reference_unit
@@ -30,16 +37,18 @@
       endcase
     -%}
 
-    <span aria-hidden="true">
+    <span aria-hidden="true" class="price-flex">
+      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609"
+           alt="AED" class="currency-icon" />
       {%- if count == 1 -%}
-        {{- 'blocks.unit_price.per_unit_single_html' | t: price: price, unit: unit -}}
+        {{- 'blocks.unit_price.per_unit_single_html' | t: price: unit_price_numeric, unit: unit -}}
       {%- else -%}
-        {{- 'blocks.unit_price.per_unit_html' | t: price: price, count: count, unit: unit -}}
+        {{- 'blocks.unit_price.per_unit_html' | t: price: unit_price_numeric, count: count, unit: unit -}}
       {%- endif -%}
     </span>
 
     <span class="visually-hidden">
-      {% assign price_without_html = price | strip_html %}
+      {% assign price_without_html = unit_price_numeric | strip_html %}
       {%- if count == 1 -%}
         {{- 'blocks.unit_price.per_unit_accessibility.single' | t: price: price_without_html, unit: unit -}}
       {%- else -%}
@@ -48,3 +57,16 @@
     </span>
   {%- endif -%}
 </small>
+
+<style>
+.price-flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.currency-icon {
+  width: 15px !important;
+  height: 15px !important;
+  vertical-align: middle;
+}
+</style>
