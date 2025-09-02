@@ -1,6 +1,6 @@
 {%- doc -%}
   This snippet is used to render a product card.
-  It is used in the product block,featured product block, and the product card block.
+  It is used in the product block, featured product block, and the product card block.
 
   @param {product} product_resource - The product to render
   @param {boolean} [show_unit_price] - Whether to show the unit price
@@ -23,45 +23,54 @@
     assign price = 1999
   endif
 
-  # Checks if product handle matches the closest product's handle (i.e. product page)
-  # and if the currency code is enabled for product pages
-  if product.handle == closest.product.handle and settings.currency_code_enabled_product_pages
-    assign price = price | money_with_currency
-    assign compare_at_price = compare_at_price | money_with_currency
-
-    # Checks if product handle does not match the closest product's handle (i.e. product card)
-    # and if the currency code is enabled for product cards
-  elsif product.handle != closest.product.handle and settings.currency_code_enabled_product_cards
-    assign price = price | money_with_currency
-    assign compare_at_price = compare_at_price | money_with_currency
-
-  else
-    assign price = price | money
-    assign compare_at_price = compare_at_price | money
-  endif
+  # Always use numeric-only prices (no currency text)
+  assign price = price | money_without_currency
+  assign compare_at_price = compare_at_price | money_without_currency
 -%}
 
-<div ref="priceContainer">
+<div ref="priceContainer" class="price-wrapper">
   {% if show_sale_price_first == false and show_compare_price %}
-    <s class="compare-at-price">{{ compare_at_price }}</s>
+    <s class="compare-at-price">
+      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+           alt="AED" class="currency-icon" />
+      {{ compare_at_price }}
+    </s>
   {% endif %}
 
-  <span class="price">{{ price | default: '&nbsp;' }}</span>
+  <span class="price">
+    <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+         alt="AED" class="currency-icon" />
+    {{ price | default: '&nbsp;' }}
+  </span>
 
   {% if show_sale_price_first == true and show_compare_price %}
-    <s class="compare-at-price">{{ compare_at_price }}</s>
+    <s class="compare-at-price">
+      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+           alt="AED" class="currency-icon" />
+      {{ compare_at_price }}
+    </s>
   {% endif %}
 
-  {%- if selected_variant.unit_price and show_unit_price %}
+  {%- if selected_variant.unit_price and show_unit_price -%}
     {%- liquid
-      if product.handle == closest.product.handle and settings.currency_code_enabled_product_pages
-        assign unit_price = selected_variant.unit_price | money_with_currency
-      elsif product.handle != closest.product.handle and settings.currency_code_enabled_product_cards
-        assign unit_price = selected_variant.unit_price | money_with_currency
-      else
-        assign unit_price = selected_variant.unit_price | money
-      endif
+      assign unit_price = selected_variant.unit_price | money_without_currency
     -%}
-    {% render 'unit-price', variant: selected_variant, price: unit_price %}
+    <div class="unit-price">
+      <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/UAE_Dirham_Symbol_svg.png?v=1756809609" 
+           alt="AED" class="currency-icon" />
+      {{ unit_price }}
+      <span class="unit-price-separator">/</span>
+      {{ selected_variant.unit_price_measurement.reference_value }}
+      {{ selected_variant.unit_price_measurement.reference_unit }}
+    </div>
   {%- endif -%}
 </div>
+
+<style>
+.price-wrapper .currency-icon {
+  width: 14px;   /* adjust size if needed */
+  height: auto;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+</style>
