@@ -23,11 +23,11 @@
   {% endif %}
 
   {%- comment -%} Shop Now button {%- endcomment -%}
-  <div class="a_plus_shopnow">
+  {% comment %} <div class="a_plus_shopnow">
   <a href="/cart/{{ product.selected_or_first_available_variant.id }}:1/checkout" class="shop-now-btn">
     Shop Now
   </a>
-</div>
+</div> {% endcomment %}
 
 </div>
 
