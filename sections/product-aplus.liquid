@@ -6,15 +6,14 @@
       <video 
         controls 
         playsinline 
-        preload="metadata"
-        poster="{{ product.featured_image | img_url: '1024x1024' }}">
+        preload="metadata">
         <source src="{{ product.metafields.content.a_plus_video | file_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
   {% endif %}
 
-  {%- comment -%} Images from metafield in masonry style {%- endcomment -%}
+  {%- comment -%} Images in masonry style {%- endcomment -%}
   {% if product.metafields.content.show_a_plus != false and product.metafields.content.a_plus.value != blank %}
     <div class="a_plus_images">
       {% for image in product.metafields.content.a_plus.value %}
@@ -37,13 +36,19 @@
     padding: 0 16px;
   }
 
-  /* Video always full width */
+  /* Responsive video */
+  .a_plus_video_wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9; /* change if your videos are different */
+    margin-bottom: 24px;
+  }
   .a_plus_video_wrapper video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 6px;
     background: #000;
-    margin-bottom: 24px;
     display: block;
   }
 
@@ -62,7 +67,6 @@
     break-inside: avoid;
   }
 
-  /* Desktop masonry (2 cols) */
   @media (min-width: 768px) {
     .a_plus_images {
       column-count: 2;
@@ -75,7 +79,7 @@
     margin-top: 20px;
   }
   .shop-now-btn {
-    background: #085e60; /* accent color */
+    background: #be1e28; /* accent color */
     color: #fff;
     padding: 14px 32px;
     border-radius: 6px;
