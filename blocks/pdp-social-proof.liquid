@@ -1,0 +1,78 @@
+<div class="social-proof-container" id="social-proof-container"></div>
+
+<style>
+  .social-proof-container {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+  }
+  .social-proof-container .emoji {
+    font-size: 16px;
+  }
+  .social-proof-container .highlight {
+    font-weight: 600;
+    color: #f97316; /* Orange highlight */
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const messages = [
+      { emoji: "🚀", highlight: "1K items", text: "added to cart in the last 3 days." },
+      { emoji: "🔥", highlight: "500+ sold", text: "in the last 24 hours." },
+      { emoji: "👀", highlight: "217 views", text: "in the last 24 hours." },
+      { emoji: "🧡", highlight: "3K people", text: "favorited this." },
+      { emoji: "⭐", highlight: "Rated 4.9", text: "by happy customers." },
+      { emoji: "⚡", highlight: "Selling fast", text: "— don’t miss out!" },
+      { emoji: "🎉", highlight: "Back in stock", text: "and going quick!" },
+      { emoji: "💎", highlight: "2K+ buyers", text: "chose this premium product." },
+      { emoji: "💨", highlight: "20 checkouts", text: "in the last hour." },
+      { emoji: "🏆", highlight: "Best seller", text: "in its category this week." }
+    ];
+
+    const container = document.getElementById("social-proof-container");
+
+    function showRandomMessage() {
+      const random = messages[Math.floor(Math.random() * messages.length)];
+      container.innerHTML = `
+        <span class="emoji">${random.emoji}</span>
+        <div class="description"><span class="highlight">${random.highlight}</span> ${random.text}</div>
+      `;
+    }
+
+    // Show first message immediately
+    showRandomMessage();
+
+    // Change every 5s
+    setInterval(showRandomMessage, 5000);
+  });
+</script>
+
+
+
+{% schema %}
+{
+  "name": "PDP Social Proof",
+  "tag": null,
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "t:settings.product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Social Proof",
+      "settings": {
+        "product": "{{ closest.product }}"
+      }
+    }
+  ]
+}
+{% endschema %}
