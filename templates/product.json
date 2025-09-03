@@ -1086,6 +1086,13 @@
         "padding-block-end": 52
       }
     },
+    "pdp_icon_with_text_jK6r4t": {
+      "type": "pdp-icon-with-text",
+      "name": "PDP USP Icons",
+      "settings": {
+        "title": ""
+      }
+    },
     "marquee_QrRxwe": {
       "type": "marquee",
       "blocks": {
@@ -1980,6 +1987,7 @@
   "order": [
     "main",
     "section_Mpa39M",
+    "pdp_icon_with_text_jK6r4t",
     "marquee_QrRxwe",
     "media_with_content_J9KjF7",
     "product_aplus_Na3VzP",
