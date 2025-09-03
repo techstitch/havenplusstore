@@ -21,13 +21,14 @@
 }
 {% endschema %}
 
+
+    {% if product.metafields.custom.icons_with_text != blank %}
 <div class="usp-section">
   {% if section.settings.title != blank %}
     <h2 class="usp-title">{{ section.settings.title }}</h2>
   {% endif %}
 
   <div class="usp-grid">
-    {% if product.metafields.custom.icons_with_text != blank %}
       {% for item in product.metafields.custom.icons_with_text.value %}
         <div class="usp-item">
           {% if item.icon != blank %}
@@ -45,9 +46,9 @@
           </div>
         </div>
       {% endfor %}
-    {% endif %}
   </div>
 </div>
+    {% endif %}
 
 <style>
   .usp-section {
