@@ -53,36 +53,46 @@
   .usp-section {
     text-align: center;
     padding: 40px 20px;
-    background: #085e60; /* same as screenshot bg */
+    background: #085e60; /* bg color */
     color: #fff;
   }
+
   .usp-title {
     font-size: 24px;
     margin-bottom: 30px;
   }
+
   .usp-grid {
-    display: grid
-;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center items horizontally */
+    gap: 40px; /* spacing between items */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .usp-item {
+    flex: 1 1 220px; /* responsive, min width per item */
+    max-width: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
+
   .usp-icon img {
     width: 40px;
     height: 40px;
     object-fit: contain;
     margin-bottom: 10px;
   }
+
   .usp-heading {
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 3.2rem;
   }
+
   .usp-subheading {
     font-size: 14px;
     opacity: 0.9;
