@@ -226,6 +226,14 @@
               },
               "blocks": {}
             },
+            "tamara_tabby_NC6Gd6": {
+              "type": "tamara_tabby",
+              "name": "Tamara Tabby",
+              "settings": {
+                "product": "{{ closest.product }}"
+              },
+              "blocks": {}
+            },
             "text_6PtBQF": {
               "type": "text",
               "name": "t:names.text",
@@ -285,6 +293,7 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "divider_ppHQRV",
+            "tamara_tabby_NC6Gd6",
             "text_6PtBQF",
             "image_GqQcpA"
           ]
