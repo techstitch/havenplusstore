@@ -1,7 +1,5 @@
 <ul class="widget-list">
-  <li 
-    class="payment-method-widget tamara-widget"
-  >
+  <li class="payment-method-widget tamara-widget">
     <img 
       src="https://cdn.dsmcdn.com/mobile/international/PaymentLogo/tamara-payment-en.png" 
       class="widget-logo" 
@@ -10,16 +8,15 @@
     <div class="widget-message-container">
       <p class="message">
         Pay up to <span>4</span> interest-free payments starting from 
-        <strong>{{ product.selected_or_first_available_variant.price | divided_by: 4.0 | money }}
-</strong>.
+        <strong class="installment-amount">
+          {{ product.selected_or_first_available_variant.price | divided_by: 4.0 | money }}
+        </strong>.
       </p>
       <span class="widget-chevron"></span>
     </div>
   </li>
 
-  <li 
-    class="payment-method-widget tabby-widget"
-  >
+  <li class="payment-method-widget tabby-widget">
     <img 
       src="https://cdn.dsmcdn.com/mobile/international/PaymentLogo/tabby-payment-en.png" 
       class="widget-logo" 
@@ -28,8 +25,9 @@
     <div class="widget-message-container">
       <p class="message">
         Pay in <span>4</span> interest-free payments of 
-        <strong>{{ product.selected_or_first_available_variant.price | divided_by: 4.0 | money }}
-</strong>.
+        <strong class="installment-amount">
+          {{ product.selected_or_first_available_variant.price | divided_by: 4.0 | money }}
+        </strong>.
       </p>
       <span class="widget-chevron"></span>
     </div>
@@ -86,7 +84,7 @@
     font-size: 14px;
     color: #333;
     margin: 0;
-        max-width: 95%;
+    max-width: 95%;
   }
 
   .widget-chevron {
@@ -97,29 +95,43 @@
     mask-size: cover;
     background-color: #333;
   }
+
   @media(max-width:756px){
-.widget-list{
-flex-direction:column;}}
+    .widget-list { flex-direction: column; }
+  }
 </style>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const widgets = document.querySelectorAll(".payment-method-widget");
+
+  widgets.forEach(widget => {
+    widget.addEventListener("click", function() {
+      // Variant from Liquid (ensures current PDP product is targeted)
+      const variantId = {{ product.selected_or_first_available_variant.id }};
+      // Get PDP quantity input, fallback to 1
+      const qtyInput = document.querySelector("form[action^='/cart/add'] [name='quantity']");
+      const qty = qtyInput ? qtyInput.value : 1;
+      // Redirect directly to checkout
+      window.location.href = `/cart/${variantId}:${qty}?checkout=true`;
+    });
+  });
+});
+</script>
 
 {% schema %}
 {
   "name": "Tamara Tabby",
-  "tag": null,
   "settings": [
     {
       "type": "product",
       "id": "product",
-      "label": "t:settings.product"
+      "label": "Product"
     }
   ],
   "presets": [
     {
-      "name": "Tamara Tabby",
-      "settings": {
-        "product": "{{ closest.product }}"
-      }
+      "name": "Tamara Tabby"
     }
   ]
 }
