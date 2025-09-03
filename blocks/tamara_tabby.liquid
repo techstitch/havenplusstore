@@ -11,7 +11,8 @@
     <div class="widget-message-container">
       <p class="message">
         Pay up to <span>4</span> interest-free payments starting from 
-        <strong>{{ product.price | divided_by: 4.0 | money }}</strong>.
+        <strong>{{ product.selected_or_first_available_variant.price | divided_by: 4.0 | money }}
+</strong>.
       </p>
       <span class="widget-chevron"></span>
     </div>
@@ -29,7 +30,8 @@
     <div class="widget-message-container">
       <p class="message">
         Pay in <span>4</span> interest-free payments of 
-        <strong>{{ product.price | divided_by: 4.0 | money }}</strong>.
+        <strong>{{ product.selected_or_first_available_variant.price | divided_by: 4.0 | money }}
+</strong>.
       </p>
       <span class="widget-chevron"></span>
     </div>
