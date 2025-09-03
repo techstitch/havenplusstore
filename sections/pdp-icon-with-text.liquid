@@ -1,0 +1,90 @@
+{% schema %}
+{
+  "name": "PDP USP Icons",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product USP Section"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Why You'll Love It"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP USP Icons"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="usp-section">
+  {% if section.settings.title != blank %}
+    <h2 class="usp-title">{{ section.settings.title }}</h2>
+  {% endif %}
+
+  <div class="usp-grid">
+    {% if product.metafields.custom.icons_with_text != blank %}
+      {% for item in product.metafields.custom.icons_with_text.value %}
+        <div class="usp-item">
+          {% if item.icon != blank %}
+            <div class="usp-icon">
+              <img src="{{ item.icon | img_url: '64x64' }}" alt="{{ item.heading | escape }}">
+            </div>
+          {% endif %}
+          <div class="usp-text">
+            {% if item.heading != blank %}
+              <h3 class="usp-heading">{{ item.heading }}</h3>
+            {% endif %}
+            {% if item.subheading != blank %}
+              <p class="usp-subheading">{{ item.subheading }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .usp-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2f5758; /* same as screenshot bg */
+    color: #fff;
+  }
+  .usp-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .usp-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .usp-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .usp-heading {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .usp-subheading {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+</style>
