@@ -59,7 +59,7 @@
         class="product-information__media"
         data-testid="product-information-media"
       >
-        <img class="product-infographics-badge" src="{{product.metafields.custom.product_infographics_badge }}">
+        <img class="product-infographics-badge" src="{{product.metafields.custom.product_infographics_badge | image_url }}">
         {%- content_for 'block',
           type: '_product-media-gallery',
           id: 'media-gallery',
