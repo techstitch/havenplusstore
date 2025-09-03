@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const qtyInput = document.querySelector("form[action^='/cart/add'] [name='quantity']");
       const qty = qtyInput ? qtyInput.value : 1;
       // Redirect directly to checkout
-      window.location.href = `/cart/${variantId}:${qty}?checkout=true`;
+window.location.href = `/checkout?variant=${variantId}&quantity=${qty}`;
     });
   });
 });
