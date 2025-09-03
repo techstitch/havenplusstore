@@ -14,13 +14,11 @@
     </div>
   {% endif %}
 
-  {%- comment -%} Images from metafield {%- endcomment -%}
+  {%- comment -%} Images from metafield in masonry style {%- endcomment -%}
   {% if product.metafields.content.show_a_plus != false and product.metafields.content.a_plus.value != blank %}
     <div class="a_plus_images">
       {% for image in product.metafields.content.a_plus.value %}
-        <div class="a_plus_image_item">
-          <img src="{{ image | img_url: '1024x1024' }}" alt="{{ image.alt | escape }}">
-        </div>
+        <img src="{{ image | img_url: '1024x1024' }}" alt="{{ image.alt | escape }}">
       {% endfor %}
     </div>
   {% endif %}
@@ -49,24 +47,25 @@
     display: block;
   }
 
-  /* Images grid */
+  /* Masonry-style images */
   .a_plus_images {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    column-count: 1;
+    column-gap: 20px;
     margin-bottom: 24px;
   }
-  .a_plus_image_item img {
+  .a_plus_images img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
     border-radius: 6px;
     display: block;
+    break-inside: avoid;
   }
 
-  /* Desktop grid (2 cols for images) */
+  /* Desktop masonry (2 cols) */
   @media (min-width: 768px) {
     .a_plus_images {
-      grid-template-columns: repeat(2, 1fr);
+      column-count: 2;
     }
   }
 
@@ -76,7 +75,7 @@
     margin-top: 20px;
   }
   .shop-now-btn {
-    background: #be1e28; /* accent color */
+    background: #085e60; /* accent color */
     color: #fff;
     padding: 14px 32px;
     border-radius: 6px;
