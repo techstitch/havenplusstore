@@ -37,6 +37,7 @@
     "cart_type": "drawer",
     "product_title_case": "default",
     "auto_open_cart_drawer": true,
+    "show_cart_note": true,
     "drawer_color_scheme": "scheme-1",
     "inputs_border_radius": 0,
     "popover_border_radius": 0,
