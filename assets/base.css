@@ -333,7 +333,9 @@ p:empty {
   --page-content-width: var(--wide-page-width);
   --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
 }
-
+.jdgm-preview-badge .jdgm-star.jdgm-star{
+  color: #ebae75 !important;
+}
 .page-width-normal {
   --page-content-width: var(--normal-page-width);
   --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
