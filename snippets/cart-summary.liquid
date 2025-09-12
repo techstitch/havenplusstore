@@ -40,9 +40,19 @@
 
   {% if settings.show_cart_note or settings.show_add_discount_code %}
     <div class="cart-actions">
-      {% if settings.show_cart_note %}
-        {% render 'cart-note' %}
-      {% endif %}
+{%- assign show_cartnote = false -%}
+
+{%- for item in cart.items -%}
+  {%- if item.product.tags contains 'cartnote' -%}
+    {%- assign show_cartnote = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if settings.show_cart_note and show_cartnote -%}
+  {% render 'cart-note' %}
+{%- endif -%}
+
 
       {% if settings.show_add_discount_code %}
         {% render 'cart-discount', section_id: section.id %}
