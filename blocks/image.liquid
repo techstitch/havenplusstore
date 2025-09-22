@@ -47,13 +47,13 @@
         class: 'image-block__image',
         sizes: sizes
     }}
-  {%- else -%}
+  {% comment %} {%- else -%}
     <div class="placeholder-image border-style size-style">
       <placeholder-image
         data-block-id="{{ block.id }}"
         data-type="general"
       ></placeholder-image>
-    </div>
+    </div> {% endcomment %}
   {%- endif -%}
 {% endcapture %}
 
@@ -65,7 +65,7 @@
   >
     {{ image }}
   </div>
-{% else %}
+{% comment %} {% else %}
   <a
     href="{{ block.settings.link }}"
     class="{{ class }}"
@@ -73,7 +73,7 @@
     {{ block.shopify_attributes }}
   >
     {{ image }}
-  </a>
+  </a> {% endcomment %}
 {% endif %}
 
 {% stylesheet %}
