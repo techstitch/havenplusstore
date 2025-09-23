@@ -57,9 +57,9 @@
         "disabled": false,
         "settings": {}
       },
-      "15734677551373749047": {
-        "type": "shopify://apps/flits/blocks/flits/d5eeb0f1-bc12-4372-af4d-40ca0d3ad847",
-        "disabled": true,
+      "15891388892413262111": {
+        "type": "shopify://apps/essential-loyalty/blocks/theme-extension/bb1b2244-edbc-4be2-b271-04fde65a5c2f",
+        "disabled": false,
         "settings": {}
       }
     },
