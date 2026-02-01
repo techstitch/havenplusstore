@@ -256,7 +256,7 @@
                   "type": "_social-link",
                   "name": "Facebook",
                   "settings": {
-                    "link": "http://facebook.com/shopify"
+                    "link": "https://www.facebook.com/profile.php?id=61580645441199"
                   },
                   "blocks": {}
                 },
@@ -272,15 +272,7 @@
                   "type": "_social-link",
                   "name": "TikTok",
                   "settings": {
-                    "link": "https://tiktok.com/@shopify"
-                  },
-                  "blocks": {}
-                },
-                "social_link_mpc8iX": {
-                  "type": "_social-link",
-                  "name": "X / Twitter",
-                  "settings": {
-                    "link": "https://x.com/shopify"
+                    "link": "https://www.tiktok.com/@havenplus"
                   },
                   "blocks": {}
                 },
@@ -288,7 +280,7 @@
                   "type": "_social-link",
                   "name": "Youtube",
                   "settings": {
-                    "link": "https://www.youtube.com/shopify"
+                    "link": "https://www.youtube.com/channel/UCrJ5QGuHOtIit_xUEwNwDhw"
                   },
                   "blocks": {}
                 }
@@ -297,7 +289,6 @@
                 "social_link_9CNUzQ",
                 "social_link_hEPbgU",
                 "social_link_jigLEi",
-                "social_link_mpc8iX",
                 "social_link_YDz6K7"
               ]
             }
