@@ -95,14 +95,14 @@
     color-{{ block.settings.color_scheme }}
   {%- endif -%}
 {%- endcapture -%}
-<a href="{{ block.settings.url }}">
+{% comment %} <a href="{{ block.settings.url }}"> {% endcomment %}
   {% render 'slideshow-slide',
     index: block_index,
     class: class,
     children: children,
     attributes: block.shopify_attributes
   %}
-</a>
+{% comment %} </a> {% endcomment %}
 {% stylesheet %}
   .slide__content {
     height: auto;
