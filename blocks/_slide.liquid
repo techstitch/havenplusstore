@@ -95,14 +95,14 @@
     color-{{ block.settings.color_scheme }}
   {%- endif -%}
 {%- endcapture -%}
-
-{% render 'slideshow-slide',
-  index: block_index,
-  class: class,
-  children: children,
-  attributes: block.shopify_attributes
-%}
-
+<a href="{{ block.settings.url }}">
+  {% render 'slideshow-slide',
+    index: block_index,
+    class: class,
+    children: children,
+    attributes: block.shopify_attributes
+  %}
+</a>
 {% stylesheet %}
   .slide__content {
     height: auto;
@@ -161,7 +161,7 @@
     .slide__image--mobile {
       display: block;
     }
-    
+
     .slide__image--desktop {
       display: none;
     }
