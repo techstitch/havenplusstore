@@ -97,12 +97,12 @@
     color-{{ block.settings.color_scheme }}
   {%- endif -%}
 {%- endcapture -%}
-  {% render 'slideshow-slide',
-    index: block_index,
-    class: class,
-    children: children,
-    attributes: block.shopify_attributes
-  %}
+{% render 'slideshow-slide',
+  index: block_index,
+  class: class,
+  children: children,
+  attributes: block.shopify_attributes
+%}
 {% stylesheet %}
   .slide__content {
     height: auto;
@@ -119,7 +119,9 @@
   .slide__content.background-transparent {
     background-color: transparent;
   }
-
+  .slide__image-container-href .slide__image-container {
+    width: 100%;
+  }
   slideshow-slide > .slide__image-container, .slide__image-container-href {
     display: flex;
     width: 100%;
@@ -152,7 +154,7 @@
   }
 
   @media (max-width: 756px) {
-      slideshow-slide > .slide__image-container {
+      slideshow-slide > .slide__image-container, .slide__image-container-href {
     aspect-ratio: 412/400;
   }
     .slide__content > * {
