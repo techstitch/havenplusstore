@@ -21,7 +21,7 @@
     {% endstyle %}
   {% endif %}
 
-<a href="{{ block.settings.url }}">
+<a class="slide__image-container-href" href="{{ block.settings.url }}">
   <div class="slide__image-container">
     {%- if block.settings.toggle_overlay -%}
       {% render 'overlay', settings: block.settings %}
