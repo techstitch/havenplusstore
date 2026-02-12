@@ -21,6 +21,7 @@
     {% endstyle %}
   {% endif %}
 
+<a href="{{ block.settings.url }}">
   <div class="slide__image-container">
     {%- if block.settings.toggle_overlay -%}
       {% render 'overlay', settings: block.settings %}
@@ -73,6 +74,7 @@
       <placeholder-image data-block-id="{{ block.id }}" data-type="general"></placeholder-image>
     {%- endif -%}
   </div>
+</a>
   <div
     class="spacing-style slide__content{% if block.settings.inherit_color_scheme == false %} color-{{ block.settings.color_scheme }}{% endif %}{% if preview_image or block.settings.toggle_overlay %} background-transparent{% endif %}"
     style="{% render 'spacing-style', settings: block.settings %}"
@@ -95,14 +97,12 @@
     color-{{ block.settings.color_scheme }}
   {%- endif -%}
 {%- endcapture -%}
-{% comment %} <a href="{{ block.settings.url }}"> {% endcomment %}
   {% render 'slideshow-slide',
     index: block_index,
     class: class,
     children: children,
     attributes: block.shopify_attributes
   %}
-{% comment %} </a> {% endcomment %}
 {% stylesheet %}
   .slide__content {
     height: auto;
