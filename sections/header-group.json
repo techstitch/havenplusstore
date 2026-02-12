@@ -17,7 +17,7 @@
         "announcement_KBNEtM": {
           "type": "_announcement",
           "settings": {
-            "text": "<strong>Ramadan Sale – Flat 40% OFF + FREE Delivery (</strong>Use code <strong>RAMADAN40)</strong>",
+            "text": "<strong>Ramadan Sale – Extra 40% OFF + FREE Delivery (</strong>Use code <strong>RAMADAN40)</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
