@@ -76,6 +76,46 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       data-template="{{ template }}"
     >
       {{ content_for_layout }}
+      {% comment %} Whatsapp floater {% endcomment %}
+       <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/971549959964" 
+   class="floating-whatsapp" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+
+   <img src="https://cdn.shopify.com/s/files/1/0688/2823/3773/files/WhatsApp_logo_icon_PNG_image_download-PNGLove.com.png?v=1771545273" 
+        alt="WhatsApp Chat">
+</a>
+
+<style>
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-whatsapp img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+</style>
     </main>
 
     {% sections 'footer-group' %}
