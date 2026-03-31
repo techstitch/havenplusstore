@@ -17,7 +17,7 @@
         "announcement_KBNEtM": {
           "type": "_announcement",
           "settings": {
-            "text": "<strong>EID Sale – Extra 40% OFF + FREE Delivery (</strong>Use code: <strong>EID40)</strong>",
+            "text": "<strong>Special Offer – Extra 40% OFF + FREE Delivery (</strong>Use code: <strong>FLAT40)</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
