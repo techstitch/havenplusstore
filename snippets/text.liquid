@@ -84,19 +84,24 @@
     {{ fallback_text }}
   </div>
 {% elsif plain_text != blank %}
-{% assign delivery_text = block.settings.text %}
+  <{{ element }} {{ attributes }}>
+    {{ block.settings.text }}
+  </{{ element }}>
+{% endif %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.querySelector(
+    ".text-block--AdjY4YlRqTElyTWI4M__text_6PtBQF strong"
+  );
 
-{% capture block_class %}
-text-block--{{ section.id }}__{{ block.id }}
-{% endcapture %}
-
-{% if block_class == "text-block--AdjY4YlRqTElyTWI4M__text_6PtBQF"
-  and product
-  and product.tags contains "UAE Love" %}
-  
-  {% assign delivery_text = "<p><strong>Get Free Delivery Within 5–7 Days</strong></p>" %}
-{% endif %}{% endif %}
-
+  if (el) {
+    // optional: check product tag via body class (Shopify adds tags sometimes)
+    if (document.body.innerHTML.includes("UAE Love")) {
+      el.textContent = "Get Free Delivery Within 5–7 Days";
+    }
+  }
+});
+</script>
 {% stylesheet %}
   :root {
     --text-align-default: left;
