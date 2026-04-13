@@ -86,13 +86,12 @@
 {% elsif plain_text != blank %}
 {% assign delivery_text = block.settings.text %}
 
-{% if block.id == "text_6PtBQF" and product.tags contains "UAE Love" %}
-  {% assign delivery_text = "<p><strong>Get Free Delivery Within 5–7 Days</strong></p>" %}
-{% endif %}
+{% assign target_block = "AdjY4YlRqTElyTWI4M__text_6PtBQF" %}
+{% assign current_block = section.id | append: "__" | append: block.id %}
 
-<{{ element }} {{ attributes }}>
-  {{ delivery_text }}
-</{{ element }}>{% endif %}
+{% if current_block == target_block and product and product.tags contains "UAE Love" %}
+  {% assign delivery_text = "<p><strong>Get Free Delivery Within 5–7 Days</strong></p>" %}
+{% endif %}{% endif %}
 
 {% stylesheet %}
   :root {
