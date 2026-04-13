@@ -84,12 +84,15 @@
     {{ fallback_text }}
   </div>
 {% elsif plain_text != blank %}
-  {% assign delivery_text = block.settings.text %}
+{% assign delivery_text = block.settings.text %}
 
-  {% if template.name == 'product' and product and block.id == 'text_6PtBQF' and product.tags contains 'UAE Love' %}
-    {% assign delivery_text = '<p><strong>Get Free Delivery Within 5–7 Days</strong></p>' %}
-  {% endif -%}
-{%- endif %}
+{% if block.id == "text_6PtBQF" and product.tags contains "UAE Love" %}
+  {% assign delivery_text = "<p><strong>Get Free Delivery Within 5–7 Days</strong></p>" %}
+{% endif %}
+
+<{{ element }} {{ attributes }}>
+  {{ delivery_text }}
+</{{ element }}>{% endif %}
 
 {% stylesheet %}
   :root {
