@@ -88,20 +88,7 @@
     {{ block.settings.text }}
   </{{ element }}>
 {% endif %}
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const el = document.querySelector(
-    ".text-block--AdjY4YlRqTElyTWI4M__text_6PtBQF strong"
-  );
 
-  if (el) {
-    // optional: check product tag via body class (Shopify adds tags sometimes)
-    if (document.body.innerHTML.includes("UAE Love")) {
-      el.textContent = "Get Free Delivery Within 5–7 Days";
-    }
-  }
-});
-</script>
 {% stylesheet %}
   :root {
     --text-align-default: left;
