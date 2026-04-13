@@ -83,12 +83,34 @@
   <div {{ attributes }}>
     {{ fallback_text }}
   </div>
+
 {% elsif plain_text != blank %}
+
+  {% if product and product.tags contains "UAE Love" %}
+    <script>
+      window.isUaeLoveProduct = true;
+    </script>
+  {% endif %}
+
   <{{ element }} {{ attributes }}>
     {{ block.settings.text }}
   </{{ element }}>
-{% endif %}
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!window.isUaeLoveProduct) return;
+
+      const el = document.querySelector(
+        ".text-block--AdjY4YlRqTElyTWI4M__text_6PtBQF strong"
+      );
+
+      if (el) {
+        el.textContent = "Get Free Delivery Within 5–7 Days";
+      }
+    });
+  </script>
+
+{% endif %}
 {% stylesheet %}
   :root {
     --text-align-default: left;
