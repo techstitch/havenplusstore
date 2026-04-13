@@ -84,14 +84,10 @@
     {{ fallback_text }}
   </div>
 {% elsif plain_text != blank %}
-{% assign delivery_text = block.settings.text %}
-
-{% assign target_block = "AdjY4YlRqTElyTWI4M__text_6PtBQF" %}
-{% assign current_block = section.id | append: "__" | append: block.id %}
-
-{% if current_block == target_block and product and product.tags contains "UAE Love" %}
-  {% assign delivery_text = "<p><strong>Get Free Delivery Within 5–7 Days</strong></p>" %}
-{% endif %}{% endif %}
+  <{{ element }} {{ attributes }}>
+    {{ block.settings.text }}
+  </{{ element }}>
+{% endif %}
 
 {% stylesheet %}
   :root {
